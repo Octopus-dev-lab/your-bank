@@ -33,6 +33,9 @@ export default {
 				900: '#1c1c1c',
 				1000: '#191919'
 			}
+		},
+		fontFamily: {
+			sans: ['Lexend', 'sans-serif']
 		}
 	},
 	plugins: []
