@@ -4,7 +4,13 @@ export default {
 	theme: {
 		colors: {
 			black: 'black',
-			white: 'white',
+			white: {
+				100: '#ffffff',
+				200: '#fcfcfd',
+				300: '#f7f7f8',
+				400: '#f1f1f3',
+				500: '#e4e4e7'
+			},
 			green: {
 				100: '#fefffa',
 				200: '#fbfff0',
