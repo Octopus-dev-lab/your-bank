@@ -1,6 +1,6 @@
-import hamburgerIcon from '../assets/hamburger.svg';
-import logo from '../assets/logo.svg';
-import logoText from '../assets/your-bank.svg';
+import hamburgerIcon from '../assets/navbar/hamburger.svg';
+import logo from '../assets/navbar/logo.svg';
+import logoText from '../assets/navbar/your-bank.svg';
 
 function Navbar() {
 	return (
