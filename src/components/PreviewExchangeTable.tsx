@@ -1,5 +1,5 @@
-import indianFlag from '../assets/indian-flag.svg';
-import usaFlag from '../assets/usa-flag.svg';
+import indianFlag from '../assets/home.preview/indian-flag.svg';
+import usaFlag from '../assets/home.preview/usa-flag.svg';
 
 function PreviewExchangeTable() {
 	return (

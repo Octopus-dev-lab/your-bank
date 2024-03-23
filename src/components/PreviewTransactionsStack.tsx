@@ -1,4 +1,4 @@
-import transactionIcon from '../assets/transaction.svg';
+import transactionIcon from '../assets/home.preview/transaction.svg';
 
 const transactionData = [
 	{

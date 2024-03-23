@@ -1,4 +1,4 @@
-import arrowDesign from '../assets/preview-arrow-abstract.svg';
+import arrowDesign from '../assets/home.preview/preview-arrow-abstract.svg';
 import PreviewBox from './PreviewBox';
 import PreviewCurrencyChip from './PreviewCurrencyChip';
 import PreviewFloatingChip from './PreviewFloatingChip';

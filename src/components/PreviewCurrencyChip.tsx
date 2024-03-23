@@ -1,7 +1,7 @@
-import bitcoinIcon from '../assets/bitcoin.svg';
-import dollarIcon from '../assets/dollar.svg';
-import ethereumIcon from '../assets/ethereum.svg';
-import euroIcon from '../assets/euro.svg';
+import bitcoinIcon from '../assets/home.preview/bitcoin.svg';
+import dollarIcon from '../assets/home.preview/dollar.svg';
+import ethereumIcon from '../assets/home.preview/ethereum.svg';
+import euroIcon from '../assets/home.preview/euro.svg';
 
 function PreviewCurrencyChip() {
 	return (
