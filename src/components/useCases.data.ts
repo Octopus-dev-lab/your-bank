@@ -45,7 +45,7 @@ export default {
 			}
 		]
 	},
-	business: {
+	businesses: {
 		title: 'For Business',
 		description:
 			'For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them',

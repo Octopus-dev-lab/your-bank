@@ -12,7 +12,7 @@ function UseCases({
 	const data =
 		active === ToggleLabels.INDIVIDUALS
 			? useCasesData.individuals
-			: useCasesData.business;
+			: useCasesData.businesses;
 	return (
 		<div className="mt-20 p-4 flex flex-col justify-center items-center">
 			<h2 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-[2.625rem] font-medium">
