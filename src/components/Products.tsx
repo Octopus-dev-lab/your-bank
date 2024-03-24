@@ -1,9 +1,15 @@
 import { useState } from 'react';
 import Services from './Services';
+import Toggle from './Toggle';
 import UseCases from './UseCases';
 
+export enum ToggleLabels {
+	INDIVIDUALS = 'For Individuals',
+	BUSINESS = 'For Businesses'
+}
+
 function Products() {
-	const [isIndividuals, setIsIndividuals] = useState(true);
+	const [active, setActive] = useState(ToggleLabels.INDIVIDUALS);
 
 	return (
 		<div className="mt-[4.34rem] px-4 flex flex-col justify-center items-center">
@@ -15,22 +21,13 @@ function Products() {
 				products at YourBank, designed to suit your unique financial
 				needs and aspirations
 			</p>
-			<div className="p-3 rounded-full bg-grey-900 border border-grey-800 mb-[3.75rem]">
-				<button
-					className={`px-[1.12rem] py-[0.62rem] text-[0.875rem] leading-[1.3124rem] font-normal rounded-full ${isIndividuals ? 'bg-green-800 text-grey-900' : 'text-white-100'}`}
-					onClick={() => setIsIndividuals(true)}
-				>
-					For Individuals
-				</button>
-				<button
-					className={`px-[1.12rem] py-[0.62rem] text-[0.875rem] leading-[1.3124rem] font-normal rounded-full ${isIndividuals ? 'text-white-100' : 'bg-green-800 text-grey-900'}`}
-					onClick={() => setIsIndividuals(false)}
-				>
-					For Businesses
-				</button>
-			</div>
+			<Toggle<ToggleLabels>
+				labels={ToggleLabels}
+				active={active}
+				setActive={setActive}
+			/>
 			<Services />
-			<UseCases individuals={isIndividuals} />
+			<UseCases active={active} />
 		</div>
 	);
 }

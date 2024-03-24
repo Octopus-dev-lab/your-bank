@@ -1,10 +1,18 @@
 import React from 'react';
 import dashedDivider from '../assets/home.products/shared/dashed-divider.svg';
 import radialAbstract from '../assets/home.products/shared/radial-abstract.svg';
+import { ToggleLabels } from './Products';
 import useCasesData from './useCases.data';
 
-function UseCases({ individuals = true }: { individuals?: boolean }) {
-	const data = individuals ? useCasesData.individuals : useCasesData.business;
+function UseCases({
+	active = ToggleLabels.INDIVIDUALS
+}: {
+	active?: ToggleLabels;
+}) {
+	const data =
+		active === ToggleLabels.INDIVIDUALS
+			? useCasesData.individuals
+			: useCasesData.business;
 	return (
 		<div className="mt-20 p-4 flex flex-col justify-center items-center">
 			<h2 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-[2.625rem] font-medium">
