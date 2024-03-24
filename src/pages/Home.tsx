@@ -3,7 +3,7 @@ import Features from '../components/features/Features';
 import Introduction from '../components/introduction/Introduction';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';
-import SignupNow from '../components/SignupNow';
+import SignupNow from '../components/signupNow/SignupNow';
 import Testimonials from '../components/testimonials/Testimonials';
 
 function Home() {

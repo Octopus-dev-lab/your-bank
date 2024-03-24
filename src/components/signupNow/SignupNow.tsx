@@ -1,5 +1,5 @@
-import bgTexture from '../assets/home.signupnow/bg-texture.webp';
-import dottedAbstractDesign from '../assets/home.signupnow/dotted-abstract.svg';
+import bgTexture from '../../assets/home.signupnow/bg-texture.webp';
+import dottedAbstractDesign from '../../assets/home.signupnow/dotted-abstract.svg';
 
 function SignupNow() {
 	return (
