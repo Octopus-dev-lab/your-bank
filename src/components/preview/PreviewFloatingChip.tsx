@@ -1,4 +1,4 @@
-import plusIcon from '../assets/home.preview/plus.svg';
+import plusIcon from '../../assets/home.preview/plus.svg';
 
 function PreviewFloatingChip() {
 	return (

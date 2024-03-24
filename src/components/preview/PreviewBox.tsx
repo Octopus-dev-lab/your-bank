@@ -1,4 +1,4 @@
-import bgTexture from '../assets/home.preview/bg-texture.webp';
+import bgTexture from '../../assets/home.preview/bg-texture.webp';
 import PreviewExchange from './PreviewExchange';
 import PreviewTransactions from './PreviewTransactions';
 
