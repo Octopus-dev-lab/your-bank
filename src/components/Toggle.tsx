@@ -3,7 +3,6 @@ function Toggle<T>({
 	active,
 	setActive
 }: {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	labels: Record<string, T>;
 	active: T;
 	setActive: (active: T) => void;
