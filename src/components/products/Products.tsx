@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import Toggle from '../shared/Toggle';
 import Services from './Services';
 import UseCases from './UseCases';
-import Toggle from './shared/Toggle';
 
 export enum ToggleLabels {
 	INDIVIDUALS = 'For Individuals',

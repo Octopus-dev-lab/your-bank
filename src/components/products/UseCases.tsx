@@ -1,6 +1,6 @@
 import React from 'react';
-import dashedDivider from '../assets/home.products/shared/dashed-divider.svg';
-import radialAbstract from '../assets/home.products/shared/radial-abstract.svg';
+import dashedDivider from '../../assets/home.products/shared/dashed-divider.svg';
+import radialAbstract from '../../assets/home.products/shared/radial-abstract.svg';
 import { ToggleLabels } from './Products';
 import useCasesData from './useCases.data';
 

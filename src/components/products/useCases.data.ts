@@ -1,11 +1,11 @@
-import cashIcon from '../assets/home.products/business/cash.svg';
-import dollarIcon from '../assets/home.products/business/dollar.svg';
-import presentationIcon from '../assets/home.products/business/presentation.svg';
-import skyscraperIcon from '../assets/home.products/business/skyscraper.svg';
-import bankIcon from '../assets/home.products/individuals/bank.svg';
-import bookIcon from '../assets/home.products/individuals/book.svg';
-import handMoneyIcon from '../assets/home.products/individuals/hand-money.svg';
-import moneyBagIcon from '../assets/home.products/individuals/money-bag.svg';
+import cashIcon from '../../assets/home.products/business/cash.svg';
+import dollarIcon from '../../assets/home.products/business/dollar.svg';
+import presentationIcon from '../../assets/home.products/business/presentation.svg';
+import skyscraperIcon from '../../assets/home.products/business/skyscraper.svg';
+import bankIcon from '../../assets/home.products/individuals/bank.svg';
+import bookIcon from '../../assets/home.products/individuals/book.svg';
+import handMoneyIcon from '../../assets/home.products/individuals/hand-money.svg';
+import moneyBagIcon from '../../assets/home.products/individuals/money-bag.svg';
 
 export default {
 	individuals: {

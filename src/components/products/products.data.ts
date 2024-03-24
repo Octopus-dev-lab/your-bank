@@ -1,6 +1,6 @@
-import briefcaseIcon from '../assets/home.products/shared/briefcase.svg';
-import cashIcon from '../assets/home.products/shared/cash.svg';
-import packageIcon from '../assets/home.products/shared/package.svg';
+import briefcaseIcon from '../../assets/home.products/shared/briefcase.svg';
+import cashIcon from '../../assets/home.products/shared/cash.svg';
+import packageIcon from '../../assets/home.products/shared/package.svg';
 
 export default [
 	{
