@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import downArrowIcon from '../assets/home.faqs/down-arrow.svg';
+import downArrowIcon from '../../assets/home.faqs/down-arrow.svg';
 import faqsData from './faqs.data';
 
 function Faqs() {

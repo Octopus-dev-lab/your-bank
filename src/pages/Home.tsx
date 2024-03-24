@@ -1,4 +1,4 @@
-import Faqs from '../components/Faqs';
+import Faqs from '../components/faqs/Faqs';
 import Features from '../components/features/Features';
 import Introduction from '../components/introduction/Introduction';
 import Preview from '../components/preview/Preview';
