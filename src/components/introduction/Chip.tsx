@@ -1,4 +1,4 @@
-import checkIcon from '../assets/home.introduction/check.svg';
+import checkIcon from '../../assets/home.introduction/check.svg';
 
 function Chip() {
 	return (
