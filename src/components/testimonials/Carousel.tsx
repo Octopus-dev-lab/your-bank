@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import arrowIcon from '../assets/home.testimonials/arrow.svg';
-import quotesIcon from '../assets/home.testimonials/quotes.svg';
+import arrowIcon from '../../assets/home.testimonials/arrow.svg';
+import quotesIcon from '../../assets/home.testimonials/quotes.svg';
 import { ToggleLabels } from './Testimonials';
 import testimonialsData from './testimonials.data';
 

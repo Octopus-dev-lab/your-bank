@@ -4,7 +4,7 @@ import Introduction from '../components/introduction/Introduction';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';
 import SignupNow from '../components/SignupNow';
-import Testimonials from '../components/Testimonials';
+import Testimonials from '../components/testimonials/Testimonials';
 
 function Home() {
 	return (
