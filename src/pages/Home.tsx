@@ -1,3 +1,4 @@
+import Faqs from '../components/Faqs';
 import Features from '../components/Features';
 import Introduction from '../components/Introduction';
 import Preview from '../components/Preview';
@@ -10,6 +11,7 @@ function Home() {
 			<Preview />
 			<Products />
 			<Features />
+			<Faqs />
 		</div>
 	);
 }
