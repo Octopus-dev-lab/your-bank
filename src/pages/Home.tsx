@@ -8,7 +8,7 @@ import Testimonials from '../components/Testimonials';
 
 function Home() {
 	return (
-		<div className="mt-12">
+		<div className="mt-12 mb-20">
 			<Introduction />
 			<Preview />
 			<Products />
