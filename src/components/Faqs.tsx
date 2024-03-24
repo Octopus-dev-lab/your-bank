@@ -17,7 +17,7 @@ function Faqs() {
 
 	return (
 		<div className="mt-20 px-4 flex flex-col justify-center items-center">
-			<h2 className="mb-[0.62rem] text-white-100 text-[1.75rem] leading-[2.625rem] text-center before:content-['Frequently'] before:text-green-800">
+			<h2 className="mb-[0.62rem] text-white-100 text-[1.75rem] leading-[2.625rem] text-center before:content-['Frequently_'] before:text-green-800">
 				Asked Questions
 			</h2>
 			<p className="mb-[3.12rem] text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light text-center">
