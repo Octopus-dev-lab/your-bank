@@ -1,5 +1,5 @@
 import Faqs from '../components/Faqs';
-import Features from '../components/Features';
+import Features from '../components/features/Features';
 import Introduction from '../components/introduction/Introduction';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import linkArrowIcon from '../assets/home.features/link-arrow.svg';
+import linkArrowIcon from '../../assets/home.features/link-arrow.svg';
 import { Filters, featuresContent } from './features.data';
 
 function Features() {
