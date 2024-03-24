@@ -3,6 +3,7 @@ import Features from '../components/Features';
 import Introduction from '../components/Introduction';
 import Preview from '../components/Preview';
 import Products from '../components/Products';
+import Testimonials from '../components/Testimonials';
 
 function Home() {
 	return (
@@ -12,6 +13,7 @@ function Home() {
 			<Products />
 			<Features />
 			<Faqs />
+			<Testimonials />
 		</div>
 	);
 }
