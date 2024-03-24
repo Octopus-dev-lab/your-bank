@@ -33,6 +33,7 @@ function PreviewTransactionsStack() {
 				const styles = getStackRelatedStyles(index);
 				return (
 					<div
+						key={index}
 						className={`${styles} flex justify-between items-center py-2 px-3 rounded-md border border-grey-800 bg-grey-900`}
 					>
 						<div className="flex gap-[0.32rem] items-center">
