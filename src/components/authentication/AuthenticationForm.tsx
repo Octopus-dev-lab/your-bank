@@ -4,7 +4,7 @@ import googleIcon from '../../assets/authentication/google.svg';
 
 function AuthenticationForm({ isLogin }: { isLogin: boolean }) {
 	return (
-		<div className="mt-[1.88rem] px-4">
+		<div className="px-4">
 			<div className="p-[1.88rem] border border-grey-800 rounded-2xl">
 				<h1 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-normal font-medium text-center">
 					{isLogin ? 'Login' : 'Sign Up'}

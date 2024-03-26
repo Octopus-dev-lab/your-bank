@@ -3,7 +3,7 @@ import Testimonials from '../components/testimonials/Testimonials';
 
 function Authentication() {
 	return (
-		<div>
+		<div className="mt-[1.88rem]">
 			<AuthenticationForm isLogin={true} />
 			<Testimonials />
 		</div>
