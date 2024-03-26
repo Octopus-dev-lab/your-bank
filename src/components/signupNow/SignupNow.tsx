@@ -31,6 +31,7 @@ function SignupNow() {
 						</p>
 						<Link
 							to={'/signup'}
+							onClick={() => window.scrollTo(0, 0)}
 							className="py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal"
 						>
 							Open Account
