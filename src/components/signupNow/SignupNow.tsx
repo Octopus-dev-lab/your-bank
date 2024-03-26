@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import bgTexture from '../../assets/home.signupnow/bg-texture.webp';
 import dottedAbstractDesign from '../../assets/home.signupnow/dotted-abstract.svg';
 
@@ -28,9 +29,12 @@ function SignupNow() {
 							imperdiet nulla penatibus. Nascetur viverra arcu sed
 							amet cursus purus.
 						</p>
-						<button className="py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal">
+						<Link
+							to={'/signup'}
+							className="py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal"
+						>
 							Open Account
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
