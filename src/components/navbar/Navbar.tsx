@@ -43,7 +43,7 @@ function Navbar() {
 						/>
 					</button>
 				</div>
-				{isOpen && <MobileMenu />}
+				{isOpen && <MobileMenu toggleMenu={toggleMenu} />}
 			</div>
 		</div>
 	);
