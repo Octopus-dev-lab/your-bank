@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 function Footer() {
 	return (
 		<footer
-			className="mt-20 pt-[3.12rem] pb-[1.88rem] px-4 
+			className="pt-[3.12rem] pb-[1.88rem] px-4 
 	 	flex flex-col justify-center items-center bg-grey-900"
 		>
 			<Navigation />
