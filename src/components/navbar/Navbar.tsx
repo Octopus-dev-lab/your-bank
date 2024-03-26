@@ -26,6 +26,7 @@ function Navbar() {
 				<div className="w-full flex justify-between">
 					<Link
 						to={'/'}
+						onClick={() => setIsOpen(false)}
 						className="flex gap-1"
 					>
 						<img
