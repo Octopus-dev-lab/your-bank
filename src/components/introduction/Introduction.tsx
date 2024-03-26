@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Chip from './Chip';
 
 function Introduction() {
@@ -16,9 +17,12 @@ function Introduction() {
 				personalized and innovative services that prioritize our
 				customers' needs.
 			</p>
-			<button className="mt-6 py-[14px] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal">
+			<Link
+				to={'/signup'}
+				className="mt-6 py-[14px] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal"
+			>
 				Open account
-			</button>
+			</Link>
 		</div>
 	);
 }
