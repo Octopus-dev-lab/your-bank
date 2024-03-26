@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/signup',
-				element: <Authentication />
+				element: <Authentication isSignup={true} />
 			}
 		]
 	}

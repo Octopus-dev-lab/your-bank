@@ -2,17 +2,17 @@ import appleIcon from '../../assets/authentication/apple.svg';
 import facebookIcon from '../../assets/authentication/facebook.svg';
 import googleIcon from '../../assets/authentication/google.svg';
 
-function AuthenticationForm({ isLogin }: { isLogin: boolean }) {
+function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 	return (
 		<div className="px-4">
 			<div className="p-[1.88rem] border border-grey-800 rounded-2xl">
 				<h1 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-normal font-medium text-center">
-					{isLogin ? 'Login' : 'Sign Up'}
+					{isSignup ? 'Sign Up' : 'Login'}
 				</h1>
 				<p className="text-grey-100 text-[0.875rem] leading-normal font-light text-center mb-10">
-					{isLogin
-						? 'Welcome back! Please log in to access your account.'
-						: 'Join our community today! Create an account to unlock exclusive features and personalized experiences.'}
+					{isSignup
+						? 'Join our community today! Create an account to unlock exclusive features and personalized experiences.'
+						: 'Welcome back! Please log in to access your account.'}
 				</p>
 				<form
 					action=""
@@ -32,7 +32,7 @@ function AuthenticationForm({ isLogin }: { isLogin: boolean }) {
 						id=""
 						placeholder="Enter your Password"
 					/>
-					{isLogin && (
+					{!isSignup && (
 						<a
 							href="#"
 							className="mb-6 text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal underline"
@@ -41,10 +41,10 @@ function AuthenticationForm({ isLogin }: { isLogin: boolean }) {
 						</a>
 					)}
 					<button className="w-full mb-6 py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-800 text-[0.875rem] leading-[1.3125rem] font-normal">
-						{isLogin ? 'Login' : 'Sign Up'}
+						{isSignup ? 'Sign Up' : 'Login'}
 					</button>
 					<button className="w-full mb-6 py-[0.88rem] px-6 bg-grey-800 rounded-full text-white-100 border border-grey-700 text-[0.875rem] leading-[1.3125rem] font-normal">
-						{isLogin ? 'Sign Up' : 'Login'}
+						{isSignup ? 'Login' : 'Sign Up'}
 					</button>
 				</form>
 				<div className="mb-6 flex items-center gap-4">
