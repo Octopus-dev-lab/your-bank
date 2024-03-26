@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import appleIcon from '../../assets/authentication/apple.svg';
 import facebookIcon from '../../assets/authentication/facebook.svg';
 import googleIcon from '../../assets/authentication/google.svg';
@@ -18,6 +19,24 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 					action=""
 					className="flex flex-col justify-center items-center"
 				>
+					{isSignup && (
+						<>
+							<input
+								className="mb-5 w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-500 text-[1rem] leading-normal font-light"
+								type="text"
+								name=""
+								id=""
+								placeholder="Enter First Name"
+							/>
+							<input
+								className="mb-5 w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-500 text-[1rem] leading-normal font-light"
+								type="text"
+								name=""
+								id=""
+								placeholder="Enter Last Name"
+							/>
+						</>
+					)}
 					<input
 						className="mb-5 w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-500 text-[1rem] leading-normal font-light"
 						type="email"
@@ -43,9 +62,13 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 					<button className="w-full mb-6 py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-800 text-[0.875rem] leading-[1.3125rem] font-normal">
 						{isSignup ? 'Sign Up' : 'Login'}
 					</button>
-					<button className="w-full mb-6 py-[0.88rem] px-6 bg-grey-800 rounded-full text-white-100 border border-grey-700 text-[0.875rem] leading-[1.3125rem] font-normal">
+					<Link
+						to={isSignup ? '/login' : '/signup'}
+						onClick={() => scrollTo(0, 0)}
+						className="w-full mb-6 py-[0.88rem] px-6 bg-grey-800 rounded-full text-white-100 border border-grey-700 text-[0.875rem] leading-[1.3125rem] font-normal text-center"
+					>
 						{isSignup ? 'Login' : 'Sign Up'}
-					</button>
+					</Link>
 				</form>
 				<div className="mb-6 flex items-center gap-4">
 					<div className="w-full h-px bg-grey-200"></div>
