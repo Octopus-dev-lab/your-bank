@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/footer/logo.svg';
 import logoText from '../../assets/footer/your-bank.svg';
 import { pages } from './footer.data';
@@ -17,13 +18,14 @@ function Navigation() {
 			</div>
 			<ul className="flex gap-[0.88rem]">
 				{pages.map((page, index) => (
-					<a
+					<Link
 						key={index}
 						className="text-white-500 text-[0.875rem] leading-[1.3125rem] font-normal"
-						href={page.url}
+						to={page.url}
+						onClick={() => window.scrollTo(0, 0)}
 					>
 						{page.title}
-					</a>
+					</Link>
 				))}
 			</ul>
 		</div>

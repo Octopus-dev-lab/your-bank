@@ -8,19 +8,19 @@ import twitterLogo from '../../assets/footer/twitter.svg';
 export const pages = [
 	{
 		title: 'Home',
-		url: '#'
+		url: '/'
 	},
 	{
 		title: 'Careers',
-		url: '#'
+		url: '/careers'
 	},
 	{
 		title: 'About',
-		url: '#'
+		url: '/about'
 	},
 	{
 		title: 'Security',
-		url: '#'
+		url: '/security'
 	}
 ];
 
