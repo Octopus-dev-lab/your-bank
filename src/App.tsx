@@ -1,6 +1,7 @@
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
-import Careers from './pages/Careers';
+import About from './pages/About';
+// import Careers from './pages/Careers';
 // import Home from './pages/Home';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 		<>
 			<Navbar />
 			{/* <Home /> */}
-			<Careers />
+			{/* <Careers /> */}
+			<About />
 			<Footer />
 		</>
 	);
