@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import closeIcon from '../../assets/navbar/close-hamburger.svg';
 import hamburgerIcon from '../../assets/navbar/hamburger.svg';
 import logo from '../../assets/navbar/logo.svg';
@@ -23,7 +24,10 @@ function Navbar() {
 				className={`absolute z-50 w-[92%] mx-[calc(8%/2)] py-[0.875rem] pl-6 pr-[0.875rem] flex flex-col items-center bg-grey-900 ${isOpen ? 'rounded-[2rem]' : 'rounded-full'} border border-grey-800`}
 			>
 				<div className="w-full flex justify-between">
-					<a className="flex gap-1">
+					<Link
+						to={'/'}
+						className="flex gap-1"
+					>
 						<img
 							src={logo}
 							alt="YourBank logo"
@@ -32,7 +36,7 @@ function Navbar() {
 							src={logoText}
 							alt="YourBank name"
 						/>
-					</a>
+					</Link>
 					<button
 						onClick={toggleMenu}
 						className={`px-3 py-1 rounded-full ${isOpen ? '' : 'bg-green-800'} `}
