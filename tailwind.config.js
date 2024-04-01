@@ -4,6 +4,11 @@ import plugin from 'tailwindcss/plugin';
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
+		extend: {
+			backgroundImage: {
+				plywood: "url('src/assets/shared/plywood-texture.webp')"
+			}
+		},
 		colors: {
 			black: 'black',
 			white: {
