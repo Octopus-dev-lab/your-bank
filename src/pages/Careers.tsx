@@ -7,7 +7,7 @@ import SignupNow from '../components/signupNow/SignupNow';
 
 function Careers() {
 	return (
-		<div className="mt-[1.87rem] mb-20">
+		<div className="mt-[1.87rem] mb-20 sm:max-w-[640px] sm:mx-auto lg:max-w-none lg:mx-0">
 			<Introduction />
 			<Values />
 			<Benefits />
