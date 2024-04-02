@@ -1,4 +1,4 @@
-import image from '../../assets/careers.introduction/Image.webp';
+import image from '../../assets/careers.introduction/image.webp';
 import DualPaneCard from '../shared/DualPaneCard';
 
 function Introduction() {
