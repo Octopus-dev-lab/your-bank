@@ -31,14 +31,14 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 									className="w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-200 text-[1rem] leading-normal font-light placeholder:text-[1rem] placeholder:leading-normal placeholder:text-grey-500 lg:m-0 lg:p-5 2xl:px-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:placeholder:text-[1.125rem] 2xl:placeholder:leading-[1.6875rem]"
 									type="text"
 									name=""
-									id=""
+									id="firstName"
 									placeholder="Enter First Name"
 								/>
 								<input
 									className="w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-200 text-[1rem] leading-normal font-light placeholder:text-grey-500 lg:m-0 lg:p-5 2xl:px-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:placeholder:text-[1.125rem] 2xl:placeholder:leading-[1.6875rem]"
 									type="text"
 									name=""
-									id=""
+									id="lastName"
 									placeholder="Enter Last Name"
 								/>
 							</div>
@@ -48,7 +48,7 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 								className="w-full p-4 border border-grey-800 bg-grey-1000 rounded-full text-grey-200 text-[1rem] leading-normal font-light placeholder:text-[1rem] placeholder:leading-normal placeholder:text-grey-500 lg:p-5 2xl:px-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:placeholder:text-[1.125rem] 2xl:placeholder:leading-[1.6875rem]"
 								type="email"
 								name=""
-								id=""
+								id="email"
 								placeholder="Enter your Email"
 							/>
 							<input
@@ -56,7 +56,7 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 								placeholder:text-[1rem] placeholder:leading-normal placeholder:text-grey-500 lg:p-5 2xl:px-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:placeholder:text-[1.125rem] 2xl:placeholder:leading-[1.6875rem]"
 								type="password"
 								name=""
-								id=""
+								id="password"
 								placeholder="Enter your Password"
 							/>
 						</div>
