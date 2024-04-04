@@ -2,11 +2,16 @@ import { Link } from 'react-router-dom';
 import appleIcon from '../../assets/authentication/apple.svg';
 import facebookIcon from '../../assets/authentication/facebook.svg';
 import googleIcon from '../../assets/authentication/google.svg';
+import dottedAbstractDesign from '../../assets/shared/dotted-abstract.svg';
 
 function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 	return (
 		<div className="px-4 lg:px-40 2xl:px-72">
-			<div className="p-[1.88rem] border border-grey-800 rounded-2xl bg-paper lg:flex lg:justify-center lg:items-center 2xl:max-w-[1326px] 2xl:mx-auto">
+			<div className="relative p-[1.88rem] border border-grey-800 rounded-2xl bg-paper lg:flex lg:justify-center lg:items-center 2xl:max-w-[1326px] 2xl:mx-auto">
+				<img
+					className="absolute top-0 right-0 -scale-x-100 w-[10.4375rem] lg:w-[16rem] 2xl:w-[21.375rem]"
+					src={dottedAbstractDesign}
+				/>
 				<div className="max-w-[398px] mx-auto lg:max-w-none lg:w-[62.4%] lg:flex lg:flex-col">
 					<h1 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-normal font-medium text-center lg:mb-4 lg:text-[2.375rem] 2xl:mb-5 2xl:text-[3rem]">
 						{isSignup ? 'Sign Up' : 'Login'}
