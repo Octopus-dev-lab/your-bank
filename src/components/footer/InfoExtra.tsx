@@ -20,7 +20,7 @@ function InfoExtra() {
 					);
 				})}
 			</div>
-			<div className="pt-[3.12rem] pb-[1.88rem] w-full flex flex-col justify-center items-center gap-5 border border-grey-800 rounded-lg bg-grey-1000 lg:px-6 lg:py-3 lg:w-full lg:flex lg:justify-between lg:items-center lg:flex-row lg:rounded-full 2xl:px-[1.88rem] 2xl:py-4 2xl:max-w-[1680px] 2xl:mx-auto">
+			<div className="pt-[3.12rem] pb-[1.88rem] w-full flex flex-col justify-center items-center gap-5 border border-grey-800 rounded-lg bg-grey-1000 lg:max-w-[1240px] lg:px-6 lg:py-3 lg:w-full lg:flex lg:justify-between lg:items-center lg:flex-row lg:rounded-full 2xl:px-[1.88rem] 2xl:py-4 2xl:max-w-[1680px] 2xl:mx-auto">
 				<div className="hidden -top-5 z-10 lg:flex gap-2 2xl:gap-[0.88rem]">
 					{social.map((social, index) => {
 						return (

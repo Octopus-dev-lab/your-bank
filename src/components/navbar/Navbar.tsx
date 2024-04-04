@@ -22,7 +22,7 @@ function Navbar() {
 				></div>
 			)}
 			<div
-				className={`absolute z-50 w-[92%] mx-[calc(8%/2)] py-[0.875rem] pl-6 pr-[0.875rem] flex flex-col items-center bg-grey-900 ${isOpen ? 'rounded-[2rem]' : 'rounded-full'} border border-grey-800 lg:w-[calc(100%-10rem)] lg:mx-20 2xl:w-[calc(100%-20rem)] 2xl:mx-40 2xl:py-5 2xl:px-[2.12rem] 2xl:max-w-[1680px] min-[2000px]:mx-[calc(50%-840px)]`}
+				className={`absolute z-50 w-[92%] mx-[calc(8%/2)] py-[0.875rem] pl-6 pr-[0.875rem] flex flex-col items-center bg-grey-900 ${isOpen ? 'rounded-[2rem]' : 'rounded-full'} border border-grey-800 lg:static lg:w-[calc(100%-10rem)] lg:max-w-[1240px] lg:mx-auto 2xl:w-[calc(100%-20rem)] 2xl:max-w-[1680px] 2xl:mx-auto 2xl:py-5 2xl:px-[2.12rem] `}
 			>
 				<div className="w-full flex justify-between items-center">
 					<Link
