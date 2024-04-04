@@ -8,7 +8,7 @@ function MissionVision() {
 			<h2 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-[2.625rem] font-normal text-center lg:text-start lg:text-[2.375rem] lg:leading-[3.5625rem] 2xl:mb-[0.88rem] 2xl:text-[3rem] 2xl:leading-[4.5rem]">
 				Mission & Vision
 			</h2>
-			<p className="mb-[3.75rem] text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light text-center lg:mb-[3.75] lg:text-start lg:text-[1rem] lg:leading-6 2xl:mb-20 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">
+			<p className="mb-[3.75rem] text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light text-center lg:text-start lg:text-[1rem] lg:leading-6 2xl:mb-20 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">
 				We envision being a leading force in the industry, driven by
 				innovation, integrity, and inclusivity, creating a brighter
 				financial future for individuals and businesses while
