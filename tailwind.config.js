@@ -7,7 +7,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				plywood: "url('src/assets/shared/plywood-texture.webp')",
-				paper: "url('src/assets/shared/paper-texture.webp)"
+				paper: "url('src/assets/shared/paper-texture.webp')"
 			},
 			screens: {
 				'2xl': '1921px'
