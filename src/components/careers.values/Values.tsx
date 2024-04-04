@@ -21,7 +21,7 @@ function Values() {
 					>
 						<div className="w-px bg-green-800"></div>
 						<div>
-							<h3 className="mb-[0.88rem] text-grey-600 text-[1.875rem] leading [2.8125rem] font-medium lg:mb-5 lg:text-[2.2rem] lg:leading-[3.3rem] min-[1037]:text-[2.5rem] min-[1037]:leading-[3.75rem] 2xl:mb-[1.88rem] 2xl:text-[3rem] 2xl:leading-[4.5rem] min-[1552px]:text-[3.625rem] min-[1552px]:leading-[5.4375rem] ">
+							<h3 className="mb-[0.88rem] text-grey-600 text-[1.875rem] leading [2.8125rem] font-medium lg:mb-5 lg:text-[2.2rem] lg:leading-[3.3rem] min-[1037px]:text-[2.5rem] min-[1037px]:leading-[3.75rem] 2xl:mb-[1.88rem] 2xl:text-[3rem] 2xl:leading-[4.5rem] min-[1552px]:text-[3.625rem] min-[1552px]:leading-[5.4375rem] ">
 								{value.title}
 							</h3>
 							<p className="text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light lg:text-[1rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">
