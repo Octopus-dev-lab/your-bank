@@ -7,8 +7,12 @@ export default {
 		extend: {
 			backgroundImage: {
 				plywood: "url('src/assets/shared/plywood-texture.webp')"
+			},
+			screens: {
+				'2xl': '1921px'
 			}
 		},
+
 		colors: {
 			black: 'black',
 			white: {
