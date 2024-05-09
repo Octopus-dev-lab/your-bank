@@ -9,6 +9,7 @@ export enum ToggleLabels {
 
 function Testimonials() {
 	const [active, setActive] = useState(ToggleLabels.INDIVIDUALS);
+
 	return (
 		<div className="mt-20 p-4 flex flex-col justify-center items-center lg:px-20 2xl:mt-40 2xl:px-40">
 			<div className="lg:w-full lg:flex lg:items-center lg:justify-between lg:gap-36 lg:mb-20 2xl:mb-[6.25rem]">
