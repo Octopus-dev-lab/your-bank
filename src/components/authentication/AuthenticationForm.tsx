@@ -72,7 +72,11 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 							{isSignup ? 'Sign Up' : 'Login'}
 						</button>
 						<Link
-							to={isSignup ? '/login' : '/signup'}
+							to={
+								isSignup
+									? '/your-bank/login'
+									: '/your-bank/signup'
+							}
 							onClick={() => scrollTo(0, 0)}
 							className="w-full mb-6 py-[0.88rem] px-6 bg-grey-800 rounded-full text-white-100 border border-grey-700 text-[0.875rem] leading-[1.3125rem] font-normal text-center lg:max-w-[404px] 2xl:max-w-[518px] 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
 						>

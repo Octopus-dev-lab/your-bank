@@ -1,29 +1,29 @@
 export const pages = [
 	{
 		name: 'Home',
-		link: '/'
+		link: '/your-bank/'
 	},
 	{
 		name: 'Careers',
-		link: '/careers'
+		link: '/your-bank/careers'
 	},
 	{
 		name: 'About',
-		link: '/about'
+		link: '/your-bank/about'
 	},
 	{
 		name: 'Security',
-		link: '/security'
+		link: '/your-bank/security'
 	}
 ];
 
 export const authenticationPages = [
 	{
 		name: 'Sign Up',
-		link: '/signup'
+		link: '/your-bank/signup'
 	},
 	{
 		name: 'Login',
-		link: '/login'
+		link: '/your-bank/login'
 	}
 ];

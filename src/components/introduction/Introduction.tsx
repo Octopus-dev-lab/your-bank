@@ -18,7 +18,7 @@ function Introduction() {
 				customers' needs.
 			</p>
 			<Link
-				to={'/signup'}
+				to={'/your-bank/signup'}
 				className="mt-6 py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:py-[1.12rem] 2xl:px-[1.88rem] 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
 			>
 				Open account

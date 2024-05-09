@@ -28,7 +28,7 @@ function SignupNow() {
 							</p>
 						</div>
 						<Link
-							to={'/signup'}
+							to={'/your-bank/signup'}
 							onClick={() => window.scrollTo(0, 0)}
 							className="py-[0.88rem] px-6 bg-green-800 rounded-full text-grey-900 text-[0.875rem] leading-[1.3125rem] font-normal whitespace-nowrap 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:py-[1.12rem] 2xl:px-[1.88rem]"
 						>

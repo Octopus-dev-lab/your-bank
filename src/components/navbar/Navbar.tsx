@@ -26,7 +26,7 @@ function Navbar() {
 			>
 				<div className="w-full flex justify-between items-center">
 					<Link
-						to={'/'}
+						to={'/your-bank/'}
 						onClick={() => setIsOpen(false)}
 						className="flex gap-1"
 					>

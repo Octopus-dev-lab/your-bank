@@ -11,31 +11,31 @@ import Security from './pages/Security';
 
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: '/your-bank',
 		element: <App />,
 		children: [
 			{
-				path: '/',
+				path: '/your-bank/',
 				element: <Home />
 			},
 			{
-				path: '/careers',
+				path: '/your-bank/careers',
 				element: <Careers />
 			},
 			{
-				path: '/about',
+				path: '/your-bank/about',
 				element: <About />
 			},
 			{
-				path: '/security',
+				path: '/your-bank/security',
 				element: <Security />
 			},
 			{
-				path: '/login',
+				path: '/your-bank/login',
 				element: <Authentication />
 			},
 			{
-				path: '/signup',
+				path: '/your-bank/signup',
 				element: <Authentication isSignup={true} />
 			}
 		]
