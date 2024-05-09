@@ -11,26 +11,9 @@ export default {
 			},
 			screens: {
 				'2xl': '1921px'
-			},
-			animation: {
-				'opacity-appear':
-					'opacity-appear 0.7s cubic-bezier(0.4, 0, 0.2, 1)',
-				'opacity-disappear':
-					'opacity-disappear 0.7s cubic-bezier(0.4, 0, 0.2, 1)'
-			},
-			keyframes: {
-				'opacity-appear': {
-					'0%': { opacity: '0' },
-					'42%': { opacity: '0' },
-					'100%': { opacity: '1' }
-				},
-				'opacity-disappear': {
-					'0%': { opacity: '1' },
-					'40%': { opacity: '0' },
-					'100%': { opacity: '0' }
-				}
 			}
 		},
+
 		colors: {
 			black: 'black',
 			white: {
@@ -100,7 +83,6 @@ export default {
 					)
 				}
 			);
-		}),
-		require('tailwind-scrollbar-hide')
+		})
 	]
 };
