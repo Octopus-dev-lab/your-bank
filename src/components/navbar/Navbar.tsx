@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import closeIcon from '../../assets/navbar/close-hamburger.svg';
 import hamburgerIcon from '../../assets/navbar/hamburger.svg';
 import logo from '../../assets/navbar/logo.svg';
@@ -10,6 +10,7 @@ import { authenticationPages, pages } from './navbar.data';
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleMenu = () => setIsOpen(!isOpen);
+	const location = useLocation().pathname;
 
 	return (
 		// The external div is utilized to provide the navbar with enough distance from the top of the screen. Using margin (which would be the first margin in the file) would cause the root to be translated downward.
@@ -28,7 +29,7 @@ function Navbar() {
 					<Link
 						to={'/your-bank/'}
 						onClick={() => setIsOpen(false)}
-						className="flex gap-1"
+						className={`flex gap-1 ${location !== '/your-bank/' ? 'hover:scale-105' : 'hover:cursor-default'}`}
 					>
 						<img
 							className="w-[1.625rem] lg:w-[1.875rem] 2xl:w-10"
@@ -42,13 +43,18 @@ function Navbar() {
 						/>
 					</Link>
 					<nav className="hidden md:block">
-						<ul className="flex gap-[1.62rem]">
+						<ul className="flex">
 							{pages.map((page, index) => (
 								<li
 									key={index}
-									className="text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
+									className={`py-[0.5rem] px-[0.81rem] text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] rounded-full ${location === page.link ? 'bg-grey-800' : ' hover:decoration-2 hover:underline hover:underline-offset-[6px] hover:decoration-grey-800 hover:scale-105'}`}
 								>
-									<Link to={page.link}>{page.name}</Link>
+									<Link
+										to={page.link}
+										className={`${location === page.link ? 'hover:cursor-default' : ''}`}
+									>
+										{page.name}
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -57,10 +63,15 @@ function Navbar() {
 						<ul className="flex gap-5 items-center text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] 2xl:gap-[1.88rem]">
 							{authenticationPages.map((page, index) => (
 								<li
-									className={`${page.name === 'Login' ? 'px-6 py-3 bg-green-800 text-grey-900 2xl:px-[1.88rem] 2xl:py-[0.88rem]' : ''} rounded-full `}
+									className={`${page.name === 'Login' ? 'px-6 py-3 bg-green-800 text-grey-900 2xl:px-[1.88rem] 2xl:py-[0.88rem]' : location !== page.link ? 'hover:underline  hover:decoration-2 hover:underline-offset-[6px] hover:decoration-grey-800' : ''} ${location !== page.link ? 'hover:scale-105' : ''} rounded-full `}
 									key={index}
 								>
-									<Link to={page.link}>{page.name}</Link>
+									<Link
+										to={page.link}
+										className={`${location === page.link ? 'hover:cursor-default' : ''}`}
+									>
+										{page.name}
+									</Link>
 								</li>
 							))}
 						</ul>
