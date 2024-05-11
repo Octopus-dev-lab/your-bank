@@ -1,7 +1,5 @@
 import arrowDesign from '../../assets/home.preview/arrow-abstract.svg';
 import PreviewBox from './PreviewBox';
-// import PreviewCurrencyChip from './PreviewCurrencyChip';
-// import PreviewFloatingChip from './PreviewFloatingChip';
 
 function Preview() {
 	return (
