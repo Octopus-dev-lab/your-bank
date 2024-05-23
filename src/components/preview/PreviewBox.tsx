@@ -7,8 +7,11 @@ function PreviewBox() {
 	return (
 		<div className="relative w-[85%] mx-auto lg:max-w-[450px] 2xl:max-w-[515px]">
 			<PreviewFloatingChip />
-			<div className="relative -z-30 p-px rounded-md bg-gradient-to-br from-grey-800 via-[#3A441F] to-grey-800 from-[37%] to-[63%]">
-				<div className="relative rounded-md bg-[#1A1A1A] -z-20">
+			<div
+				id="preview-box"
+				className="relative -z-30 p-px rounded-md bg-gradient-to-br from-grey-800 via-[#3A441F] to-grey-800 from-[37%] to-[63%]"
+			>
+				<div className="relative rounded-md bg-[#1A1A1A] -z-20 max-h-full overflow-clip">
 					<div
 						className={
 							'absolute w-full h-full -z-10 opacity-80 bg-plywood'

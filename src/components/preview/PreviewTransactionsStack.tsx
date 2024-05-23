@@ -33,8 +33,9 @@ function PreviewTransactionsStack() {
 				const styles = getStackRelatedStyles(index);
 				return (
 					<div
+						id={`transaction-${index}-card`}
 						key={index}
-						className={`${styles} flex justify-between items-center py-2 px-3 rounded-md border border-grey-800 bg-grey-900 lg:px-4 lg:py-[0.7rem] 2xl:px-[1.3rem] 2xl:py-[0.87rem]`}
+						className={`hidden-on-start ${styles} flex justify-between items-center py-2 px-3 rounded-md border border-grey-800 bg-grey-900 lg:px-4 lg:py-[0.7rem] 2xl:px-[1.3rem] 2xl:py-[0.87rem]`}
 					>
 						<div className="flex gap-[0.32rem] items-center lg:gap-[0.43rem] 2xl:gap-[0.54rem]">
 							<div className="w-fit rounded-full p-[0.32rem] bg-green-800 lg:p-[0.43rem] 2xl:p-[0.54rem]">
