@@ -74,6 +74,7 @@ export default {
 		}
 	},
 	plugins: [
+		require('tailwind-scrollbar'),
 		plugin(function ({ matchUtilities, theme }) {
 			matchUtilities(
 				{
