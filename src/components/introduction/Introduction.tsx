@@ -13,7 +13,7 @@ function Introduction() {
 
 	useGSAP(
 		() => {
-			const tilmeline = gsap.timeline({ duration: 1 });
+			const tilmeline = gsap.timeline({ duration: 0.7 });
 			setTimeline(tilmeline);
 			tilmeline.from(titleRef.current, {
 				opacity: 0
