@@ -1,8 +1,29 @@
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
 import checkIcon from '../../assets/home.introduction/check.svg';
 
-function Chip() {
+function Chip({ timeline }: { timeline: gsap.core.Timeline | undefined }) {
+	const chipRef = useRef<HTMLDivElement>(null);
+	useGSAP(
+		() => {
+			timeline &&
+				timeline.from(
+					chipRef.current,
+					{
+						opacity: 0,
+						y: 20
+					},
+					'paragraph'
+				);
+		},
+		{ dependencies: [timeline], revertOnUpdate: true }
+	);
+
 	return (
-		<div className="w-fit pl-2 pr-4 py-2 mb-3 gap-1 flex justify-center items-center bg-grey-800 rounded-full 2xl:py-[0.62rem] 2xl:px-5 2xl:gap-[0.38rem]">
+		<div
+			ref={chipRef}
+			className="w-fit pl-2 pr-4 py-2 mb-3 gap-1 flex justify-center items-center bg-grey-800 rounded-full 2xl:py-[0.62rem] 2xl:px-5 2xl:gap-[0.38rem]"
+		>
 			<img
 				className="w-5 2xl:w-6"
 				src={checkIcon}
