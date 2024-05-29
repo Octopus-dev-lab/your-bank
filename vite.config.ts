@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
-	base: '/your-bank/'
+	plugins: [react()]
+	// Uncomment the following line before building for production (subdomain deployment)
+	// base: '/your-bank/'
 });
