@@ -1,5 +1,5 @@
 import { ReactSVG } from 'react-svg';
-import logo from '../../assets/logo/logo.svg';
+import logo from '../../assets/svg/logo.svg';
 
 function Logo({ svgSizeClasses }: { svgSizeClasses: string }) {
 	const classList = svgSizeClasses.split(' ');
