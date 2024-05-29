@@ -1,11 +1,11 @@
 import abstract from '../assets/home/home-topleft-abstract.svg';
 import Faqs from '../components/faqs/Faqs';
 import Features from '../components/features/Features';
-import Introduction from '../components/introduction/Introduction';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';
 import SignupNow from '../components/signupNow/SignupNow';
 import Testimonials from '../components/testimonials/Testimonials';
+import Welcome from '../components/welcome/Welcome';
 
 function Home() {
 	return (
@@ -16,7 +16,7 @@ function Home() {
 				alt="abstract design"
 			/>
 			<div className="lg:w-full lg:min-h-[85vh] lg:flex lg:justify-between lg:items-center lg:px-20 2xl:px-40">
-				<Introduction />
+				<Welcome />
 				<Preview />
 			</div>
 			<Products />

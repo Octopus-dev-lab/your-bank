@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Chip from './Chip';
 
-function Introduction() {
+function Welcome() {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const titleRef = useRef<HTMLHeadingElement>(null);
 	const paragraphRef = useRef<HTMLParagraphElement>(null);
@@ -74,4 +74,4 @@ function Introduction() {
 	);
 }
 
-export default Introduction;
+export default Welcome;
