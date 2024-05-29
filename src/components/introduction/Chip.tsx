@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import { ReactSVG } from 'react-svg';
-import checkIcon from '../../assets/home.introduction/check.svg';
+import checkIcon from '../../assets/svg/check.svg';
 
 function Chip({ timeline }: { timeline: gsap.core.Timeline | undefined }) {
 	const chipRef = useRef<HTMLDivElement>(null);
