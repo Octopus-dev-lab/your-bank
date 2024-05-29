@@ -13,7 +13,7 @@ function Logo({ svgSizeClasses }: { svgSizeClasses: string }) {
 			}}
 			fallback={() => (
 				<img
-					className="text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
+					className="text-white-100 text-xs leading-6 font-light lg:text-[0.875rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-6 overflow-visible"
 					src=""
 					alt="Your bank logo"
 				/>

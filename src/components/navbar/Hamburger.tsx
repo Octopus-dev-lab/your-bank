@@ -17,11 +17,11 @@ function Hamburger({
 			className={`inline-block px-3 py-1 rounded-full ${isOpen ? '' : 'bg-green-800'} md:hidden`}
 		>
 			<ReactSVG
-				className="w-[1.75rem] h-[1.75rem] overflow-visible"
+				className="w-[1.75rem] h-[1.75rem]"
 				src={isOpen ? closeIcon : hamburgerIcon}
 				fallback={() => (
 					<img
-						className="text-white-400 text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
+						className="text-white-100 text-xs leading-6 font-light lg:text-[0.875rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-6 overflow-visible"
 						src=""
 						alt="Hamburger icon"
 					/>
