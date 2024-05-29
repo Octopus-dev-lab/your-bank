@@ -17,13 +17,7 @@ export const pages = [
 	}
 ];
 
-export const authenticationPages = [
-	{
-		name: 'Sign Up',
-		link: '/your-bank/signup'
-	},
-	{
-		name: 'Login',
-		link: '/your-bank/login'
-	}
-];
+export const authenticationPages = {
+	signup: '/your-bank/signup',
+	login: '/your-bank/login'
+};

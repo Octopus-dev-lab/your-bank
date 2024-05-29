@@ -95,16 +95,22 @@ function MobileMenu({
 				))}
 			</ul>
 			<div className="flex gap-2 justify-center items-center text-white-100 text-[1.125rem] leading-[1.6875rem] font-light">
-				{authenticationPages.map((page, index) => (
-					<Link
-						className={`px-6 py-[0.88rem] ${page.name === 'Login' ? 'bg-green-800 text-grey-900 login' : 'signup'} rounded-full`}
-						key={index}
-						to={page.link}
-						onClick={closeMenu}
-					>
-						{page.name}
-					</Link>
-				))}
+				<Link
+					className={'px-6 py-[0.88rem] signup rounded-full'}
+					to={authenticationPages.signup}
+					onClick={closeMenu}
+				>
+					Sign Up
+				</Link>
+				<Link
+					className={
+						'px-6 py-[0.88rem] bg-green-800 text-grey-900 login rounded-full'
+					}
+					to={authenticationPages.login}
+					onClick={closeMenu}
+				>
+					Login
+				</Link>
 			</div>
 		</nav>
 	);
