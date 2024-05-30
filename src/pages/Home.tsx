@@ -1,7 +1,7 @@
 import { ReactSVG } from 'react-svg';
 import abstract from '../assets/svg/dot-abstract.svg';
 import Faqs from '../components/faqs/Faqs';
-import Features from '../components/features/Features';
+import FeaturesSection from '../components/features/FeaturesSection';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';
 import SignupNow from '../components/signupNow/SignupNow';
@@ -37,7 +37,7 @@ function Home() {
 				<Preview />
 			</div>
 			<Products />
-			<Features />
+			<FeaturesSection />
 			<Faqs />
 			<Testimonials />
 			<SignupNow />
