@@ -9,7 +9,8 @@ function Services() {
 				<React.Fragment key={index}>
 					<div className="flex flex-col justify-center items-center">
 						<ReactSVG
-							className="services mb-5 w-16 h-16 2xl:w-[5.38rem] 2xl:h-[5.38rem] overflow-visible"
+							id={`product-${index}`}
+							className="mb-5 w-16 h-16 2xl:w-[5.38rem] 2xl:h-[5.38rem] overflow-visible"
 							src={product.icon}
 							beforeInjection={(svg) => {
 								svg.classList.add(
@@ -19,20 +20,20 @@ function Services() {
 									'2xl:h-[5.38rem]'
 								);
 							}}
-							onError={() => {
-								document
-									.querySelectorAll('.services')
-									.forEach((el) => {
-										el.classList.remove('w-16');
-									});
+							fallback={() => {
+								const container = document.getElementById(
+									`product-${index}`
+								);
+								container?.classList.remove('w-16');
+								container?.classList.add('w-full');
+								return (
+									<img
+										className="text-white-100 text-xs leading-6 font-light lg:text-[0.875rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-6 overflow-visible"
+										src=""
+										alt={product.alt}
+									/>
+								);
 							}}
-							fallback={() => (
-								<img
-									className="text-white-100 text-xs leading-6 font-light lg:text-[0.875rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-6 overflow-visible w-32"
-									src=""
-									alt={product.alt}
-								/>
-							)}
 						/>
 						<h3 className="mb-3 text-white-100 text-[1.25rem] leading-[1.875rem] font-normal lg:mb-4 2xl:text-[1.5rem] 2xl:leading-9 2xl:mb-5">
 							{product.title}
