@@ -1,5 +1,5 @@
 import { ReactSVG } from 'react-svg';
-import radialAbstract from '../../assets/svg/radial-abstract.svg';
+import RadialAbstract from '../shared/RadialAbstract';
 
 function Card({
 	data
@@ -20,7 +20,8 @@ function Card({
 }) {
 	return (
 		<div className="relative lg:w-[50%]">
-			<ReactSVG
+			<RadialAbstract className="absolute top-0 -left-1 w-[7.375rem] h-28 lg:-left-2 lg:w-56 lg:h-[13.3125rem]" />
+			{/* <ReactSVG
 				id="abstract-radial"
 				className="absolute top-0 -left-1 w-[7.375rem] h-28 lg:-left-2 lg:w-56 lg:h-[13.3125rem]"
 				src={radialAbstract}
@@ -45,7 +46,7 @@ function Card({
 						/>
 					);
 				}}
-			/>
+			/> */}
 			<div className="mb-[1.88rem] p-5 grid grid-cols-2 grid-rows-2 rounded-2xl bg-grey-900 gap-[0.62rem] lg:p-10 2xl:p-[3.12rem]">
 				{data.cardsData.map((card, index) => (
 					<div

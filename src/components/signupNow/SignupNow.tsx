@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import dottedAbstractDesign from '../../assets/home.signupnow/dotted-abstract.svg';
+import RadialAbstract from '../shared/RadialAbstract';
 
 function SignupNow() {
 	return (
@@ -8,11 +8,7 @@ function SignupNow() {
 				<div className="absolute w-full h-full -z-30 rounded-2xl bg-gradient-120 from-[#3A441F] to-grey-800 to-[20%] p-px">
 					<div className="w-full h-full -z-20 rounded-2xl bg-grey-900"></div>
 				</div>
-
-				<img
-					className="absolute top-0 left-0 w-1/2 h-auto lg:w-1/4 2xl:w-1/6"
-					src={dottedAbstractDesign}
-				/>
+				<RadialAbstract className="absolute top-0 -left-1 w-[9.4375rem] h-[8.9375rem] lg:-left-2 lg:w-[12.625rem] lg:h-48 2xl:w-[18.625rem] 2xl:h-[17.6875rem]" />
 				<div className="relative p-px w-full h-full rounded-2xl">
 					<div className="absolute w-[calc(100%-2px)] h-[calc(100%-2px)] opacity-80 -z-10 rounded-2xl bg-plywood" />
 					<div className="p-[30px] flex flex-col justify-between items-center rounded-2xl bg-gradient-to-l from-grey-900 from-45% lg:flex-row lg:gap-36 lg:p-[3.75rem] 2xl:p-20">
