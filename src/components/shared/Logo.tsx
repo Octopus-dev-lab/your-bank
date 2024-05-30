@@ -1,15 +1,18 @@
 import { ReactSVG } from 'react-svg';
 import logo from '../../assets/svg/logo.svg';
 
-function Logo({ svgSizeClasses }: { svgSizeClasses: string }) {
-	const classList = svgSizeClasses.split(' ');
+function Logo({ className }: { className?: string }) {
+	const classes = className?.split(' ');
+	const sizeClasses = classes?.filter(
+		(c) => c.includes('w-') || c.includes('h-')
+	);
 
 	return (
 		<ReactSVG
-			className="w-[6.33rem] h-[1.63rem] lg:w-[7.3rem] lg:h-[1.88rem] 2xl:w-[9.74rem] 2xl:h-[2.5rem]"
+			className={className}
 			src={logo}
 			beforeInjection={(svg) => {
-				svg.classList.add(...classList);
+				sizeClasses && svg.classList.add(...sizeClasses);
 			}}
 			fallback={() => (
 				<img

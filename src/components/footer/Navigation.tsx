@@ -1,23 +1,11 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/footer/logo.svg';
-import logoText from '../../assets/footer/your-bank.svg';
+import Logo from '../shared/Logo';
 import { pages } from './footer.data';
 
 function Navigation() {
 	return (
 		<div className="flex flex-col items-center justify-center gap-6">
-			<div className="flex justify-center items-center gap-1">
-				<img
-					className="w-[2.125rem] 2xl:w-10"
-					src={logo}
-					alt="YourBank logo"
-				/>
-				<img
-					className="w-24 2xl:w-28"
-					src={logoText}
-					alt="YourBank name"
-				/>
-			</div>
+			<Logo className="w-[8.28rem] h-[2.13rem] 2xl:w-[9.74rem] 2xl:h-10" />
 			<ul className="flex gap-[0.88rem] lg:gap-[1.62rem]">
 				{pages.map((page, index) => (
 					<Link

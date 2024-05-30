@@ -11,7 +11,7 @@ function Logo({ closeMenu }: { closeMenu: () => void }) {
 			onClick={closeMenu}
 			className={`flex gap-1 ${location === '/your-bank/' && 'hover:cursor-default'}`}
 		>
-			<LogoSvg svgSizeClasses="w-[6.33rem] h-[1.63rem] lg:w-[7.3rem] lg:h-[1.88rem] 2xl:w-[9.74rem] 2xl:h-[2.5rem]" />
+			<LogoSvg className="w-[6.33rem] h-[1.63rem] lg:w-[7.3rem] lg:h-[1.88rem] 2xl:w-[9.74rem] 2xl:h-[2.5rem]" />
 		</Link>
 	);
 }
