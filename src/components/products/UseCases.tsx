@@ -1,7 +1,7 @@
 import React from 'react';
-import dashedDividerVertical from '../../assets/home.products/shared/dashed-divider-vertical.svg';
-import dashedDivider from '../../assets/home.products/shared/dashed-divider.svg';
-import radialAbstract from '../../assets/home.products/shared/radial-abstract.svg';
+import dashedDividerHorizontal from '../../assets/svg/dashed-divider-horizontal.svg';
+import dashedDividerVertical from '../../assets/svg/dashed-divider-vertical.svg';
+import radialAbstract from '../../assets/svg/radial-abstract.svg';
 import { ToggleLabels } from './Products';
 import useCasesData from './useCases.data';
 
@@ -70,7 +70,7 @@ function UseCases({
 									<>
 										<img
 											className="md:hidden"
-											src={dashedDivider}
+											src={dashedDividerHorizontal}
 										/>
 										<img
 											className="hidden md:block"

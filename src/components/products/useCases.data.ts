@@ -1,11 +1,11 @@
-import cashIcon from '../../assets/home.products/business/cash.svg';
-import dollarIcon from '../../assets/home.products/business/dollar.svg';
-import presentationIcon from '../../assets/home.products/business/presentation.svg';
-import skyscraperIcon from '../../assets/home.products/business/skyscraper.svg';
-import bankIcon from '../../assets/home.products/individuals/bank.svg';
-import bookIcon from '../../assets/home.products/individuals/book.svg';
-import handMoneyIcon from '../../assets/home.products/individuals/hand-money.svg';
-import moneyBagIcon from '../../assets/home.products/individuals/money-bag.svg';
+import bankIcon from '../../assets/svg/bank.svg';
+import bookIcon from '../../assets/svg/book.svg';
+import cashIcon from '../../assets/svg/cash.svg';
+import dollarIcon from '../../assets/svg/dollar.svg';
+import handMoneyIcon from '../../assets/svg/hand-money.svg';
+import moneyBagIcon from '../../assets/svg/money-bag.svg';
+import presentationIcon from '../../assets/svg/presentation.svg';
+import skyscraperIcon from '../../assets/svg/skyscraper.svg';
 
 export default {
 	individuals: {
@@ -15,18 +15,22 @@ export default {
 		cardsData: [
 			{
 				icon: moneyBagIcon,
+				alt: 'Hand holding a bag with a dollar sign',
 				title: 'Managing Personal Finances'
 			},
 			{
 				icon: handMoneyIcon,
+				alt: 'Hands joined to form a house with a dollar sign inside',
 				title: 'Saving for the Future'
 			},
 			{
 				icon: bankIcon,
+				alt: 'Bank building',
 				title: 'Home ownership'
 			},
 			{
 				icon: bookIcon,
+				alt: 'Open book',
 				title: 'Education Funding'
 			}
 		],
@@ -52,18 +56,22 @@ export default {
 		cardsData: [
 			{
 				icon: skyscraperIcon,
+				alt: 'Skyscrapers',
 				title: 'Startups and Entrepreneurs'
 			},
 			{
 				icon: cashIcon,
+				alt: 'Cash',
 				title: 'Cash Flow Management'
 			},
 			{
 				icon: presentationIcon,
+				alt: 'Plip chart easel',
 				title: 'Business Expansion'
 			},
 			{
 				icon: dollarIcon,
+				alt: 'Dollar sign',
 				title: 'Payment Solutions'
 			}
 		],
