@@ -7,7 +7,7 @@ export enum ToggleLabels {
 	BUSINESSES = 'For Businesses'
 }
 
-function Testimonials() {
+function TestimonialsSection() {
 	const [active, setActive] = useState(ToggleLabels.INDIVIDUALS);
 
 	return (
@@ -36,4 +36,4 @@ function Testimonials() {
 	);
 }
 
-export default Testimonials;
+export default TestimonialsSection;

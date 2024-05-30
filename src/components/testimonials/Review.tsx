@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import quotesIcon from '../../assets/home.testimonials/quotes.svg';
+import Quotes from './Quotes';
 
 function Review({
 	position,
@@ -14,15 +14,13 @@ function Review({
 }) {
 	return (
 		<div
-			className={`border  border-grey-800 min-h-[20rem] overflow-y-hidden p-5 flex-col justify-start items-center rounded-xl md:min-h-[18rem] lg:border-none lg:flex col-span-1 ${getCssAnimationProperties(position, animationDirection)}`}
+			className={`border border-grey-800 min-h-[20rem] overflow-y-hidden p-5 flex-col justify-start items-center rounded-xl md:min-h-[18rem] lg:border-none lg:flex col-span-1 ${getCssAnimationProperties(position, animationDirection)}`}
 		>
-			<div className="mb-[1.88rem] flex justify-center items-center">
+			<div className="w-full mb-[1.88rem] flex justify-center items-center">
 				<div className="w-full h-px mr-4 bg-gradient-to-l from-grey-800 from-[70%]"></div>
-				<img
-					className="w-11 2xl:w-[3.75rem]"
-					src={quotesIcon}
-					alt="quotes icon"
-				/>
+				<div>
+					<Quotes />
+				</div>
 				<div className="w-full h-px ml-4 bg-gradient-to-r from-grey-800 from-[70%]"></div>
 			</div>
 			<p className="mb-[1.88rem] text-white-100 font-normal text-center text-[1rem] leading-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">

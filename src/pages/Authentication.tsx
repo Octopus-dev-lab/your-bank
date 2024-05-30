@@ -1,5 +1,5 @@
 import AuthenticationForm from '../components/authentication/AuthenticationForm';
-import Testimonials from '../components/testimonials/Testimonials';
+import Testimonials from '../components/testimonials/TestimonialsSection';
 
 function Authentication({ isSignup = false }: { isSignup?: boolean }) {
 	return (

@@ -5,7 +5,7 @@ import FeaturesSection from '../components/features/FeaturesSection';
 import Preview from '../components/preview/Preview';
 import Products from '../components/products/Products';
 import SignupNow from '../components/signupNow/SignupNow';
-import Testimonials from '../components/testimonials/Testimonials';
+import TestimonialsSection from '../components/testimonials/TestimonialsSection';
 import Welcome from '../components/welcome/Welcome';
 
 function Home() {
@@ -39,7 +39,7 @@ function Home() {
 			<Products />
 			<FeaturesSection />
 			<Faqs />
-			<Testimonials />
+			<TestimonialsSection />
 			<SignupNow />
 		</div>
 	);
