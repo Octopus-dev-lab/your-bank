@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import downArrowIcon from '../../assets/home.faqs/down-arrow.svg';
+import DownArrow from '../../assets/svg/down-arrow.svg?react';
 import faqsData from './faqs.data';
 
 function Faqs() {
@@ -48,10 +48,8 @@ function Faqs() {
 				className="py-[0.88rem] px-5 rounded-full border border-grey-800 bg-grey-900 text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal flex gap-1 lg:self-center 2xl:px-6 2xl:py-[1.12rem] 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
 			>
 				{allShown ? 'Hide' : "Load More FAQ'S"}
-				<img
-					className={`w-[1.125rem] 2xl:w-[1.375rem] my-auto ${allShown ? 'transform rotate-180' : ''}`}
-					src={downArrowIcon}
-					alt="arrow"
+				<DownArrow
+					className={`w-[1.125rem] h-[1.125rem] 2xl:w-[1.375rem] 2xl:h-[1.375rem] my-auto ${allShown ? 'transform rotate-180' : ''}`}
 				/>
 			</button>
 		</div>
