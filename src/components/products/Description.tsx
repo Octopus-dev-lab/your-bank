@@ -1,5 +1,6 @@
 import React from 'react';
-import Divider from './Divider';
+import DividerHorizontal from '../../assets/svg/dashed-divider-horizontal.svg?react';
+import DividerVertical from '../../assets/svg/dashed-divider-vertical.svg?react';
 
 function Description({
 	data
@@ -8,8 +9,7 @@ function Description({
 		title: string;
 		description: string;
 		cardsData: {
-			icon: string;
-			alt: string;
+			icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 			title: string;
 		}[];
 		stats: {
@@ -37,7 +37,12 @@ function Description({
 								{stat.title}
 							</h4>
 						</div>
-						{index !== data.stats.length - 1 && <Divider />}
+						{index !== data.stats.length - 1 && (
+							<>
+								<DividerHorizontal className="md:hidden" />
+								<DividerVertical className="hidden md:block" />
+							</>
+						)}
 					</React.Fragment>
 				))}
 			</div>

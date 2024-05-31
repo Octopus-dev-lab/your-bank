@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactSVG } from 'react-svg';
 import productsData from './products.data';
 
 function Services() {
@@ -8,33 +7,7 @@ function Services() {
 			{productsData.map((product, index) => (
 				<React.Fragment key={index}>
 					<div className="flex flex-col justify-center items-center">
-						<ReactSVG
-							id={`product-${index}`}
-							className="mb-5 w-16 h-16 2xl:w-[5.38rem] 2xl:h-[5.38rem] overflow-visible"
-							src={product.icon}
-							beforeInjection={(svg) => {
-								svg.classList.add(
-									'w-16',
-									'h-16',
-									'2xl:w-[5.38rem]',
-									'2xl:h-[5.38rem]'
-								);
-							}}
-							fallback={() => {
-								const container = document.getElementById(
-									`product-${index}`
-								);
-								container?.classList.remove('w-16');
-								container?.classList.add('w-full');
-								return (
-									<img
-										className="text-white-100 text-xs leading-6 font-light lg:text-[0.875rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-6 overflow-visible"
-										src=""
-										alt={product.alt}
-									/>
-								);
-							}}
-						/>
+						<product.icon className="mb-5 w-16 h-16 2xl:w-[5.38rem] 2xl:h-[5.38rem]" />
 						<h3 className="mb-3 text-white-100 text-[1.25rem] leading-[1.875rem] font-normal lg:mb-4 2xl:text-[1.5rem] 2xl:leading-9 2xl:mb-5">
 							{product.title}
 						</h3>

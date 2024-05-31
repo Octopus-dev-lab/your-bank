@@ -1,11 +1,11 @@
-import bankIcon from '../../assets/svg/bank.svg';
-import bookIcon from '../../assets/svg/book.svg';
-import cashIcon from '../../assets/svg/cash.svg';
-import dollarIcon from '../../assets/svg/dollar.svg';
-import handMoneyIcon from '../../assets/svg/hand-money.svg';
-import moneyBagIcon from '../../assets/svg/money-bag.svg';
-import presentationIcon from '../../assets/svg/presentation.svg';
-import skyscraperIcon from '../../assets/svg/skyscraper.svg';
+import BankIcon from '../../assets/svg/bank.svg?react';
+import BookIcon from '../../assets/svg/book.svg?react';
+import CashIcon from '../../assets/svg/cash.svg?react';
+import DollarIcon from '../../assets/svg/dollar.svg?react';
+import HandMoneyIcon from '../../assets/svg/hand-money.svg?react';
+import MoneyBagIcon from '../../assets/svg/money-bag.svg?react';
+import PresentationIcon from '../../assets/svg/presentation.svg?react';
+import SkyscraperIcon from '../../assets/svg/skyscraper.svg?react';
 
 export default {
 	individuals: {
@@ -14,23 +14,23 @@ export default {
 			'For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers',
 		cardsData: [
 			{
-				icon: moneyBagIcon,
-				alt: 'Hand holding a bag with a dollar sign',
+				icon: MoneyBagIcon,
+				// alt: 'Hand holding a bag with a dollar sign',
 				title: 'Managing Personal Finances'
 			},
 			{
-				icon: handMoneyIcon,
-				alt: 'Hands joined to form a house with a dollar sign inside',
+				icon: HandMoneyIcon,
+				// alt: 'Hands joined to form a house with a dollar sign inside',
 				title: 'Saving for the Future'
 			},
 			{
-				icon: bankIcon,
-				alt: 'Bank building',
+				icon: BankIcon,
+				// alt: 'Bank building',
 				title: 'Home ownership'
 			},
 			{
-				icon: bookIcon,
-				alt: 'Open book',
+				icon: BookIcon,
+				// alt: 'Open book',
 				title: 'Education Funding'
 			}
 		],
@@ -55,23 +55,23 @@ export default {
 			'For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them',
 		cardsData: [
 			{
-				icon: skyscraperIcon,
-				alt: 'Skyscrapers',
+				icon: SkyscraperIcon,
+				// alt: 'Skyscrapers',
 				title: 'Startups and Entrepreneurs'
 			},
 			{
-				icon: cashIcon,
-				alt: 'Cash',
+				icon: CashIcon,
+				// alt: 'Cash',
 				title: 'Cash Flow Management'
 			},
 			{
-				icon: presentationIcon,
-				alt: 'Plip chart easel',
+				icon: PresentationIcon,
+				// alt: 'Plip chart easel',
 				title: 'Business Expansion'
 			},
 			{
-				icon: dollarIcon,
-				alt: 'Dollar sign',
+				icon: DollarIcon,
+				// alt: 'Dollar sign',
 				title: 'Payment Solutions'
 			}
 		],
