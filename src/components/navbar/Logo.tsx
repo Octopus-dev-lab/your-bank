@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import LogoSvg from '../shared/Logo';
+import LogoSvg from '../../assets/svg/logo.svg?react';
 
 function Logo({ closeMenu }: { closeMenu: () => void }) {
 	const location = useLocation().pathname;
