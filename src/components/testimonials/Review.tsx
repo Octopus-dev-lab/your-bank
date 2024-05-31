@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import Quotes from './Quotes';
+import Quotes from '../../assets/svg/quotes.svg?react';
 
 function Review({
 	position,
@@ -18,8 +18,8 @@ function Review({
 		>
 			<div className="w-full mb-[1.88rem] flex justify-center items-center">
 				<div className="w-full h-px mr-4 bg-gradient-to-l from-grey-800 from-[70%]"></div>
-				<div>
-					<Quotes />
+				<div className="w-11 h-11 2xl:w-[3.75rem] 2xl:h-[3.75rem]">
+					<Quotes className="w-11 h-11 2xl:w-[3.75rem] 2xl:h-[3.75rem]" />
 				</div>
 				<div className="w-full h-px ml-4 bg-gradient-to-r from-grey-800 from-[70%]"></div>
 			</div>

@@ -33,10 +33,7 @@ function Carousel({ active }: { active: ToggleLabels }) {
 
 	return (
 		<div className="flex flex-col justify-between items-center w-full h-[26rem]  xl:flex-row">
-			<DesktopButton
-				isPrevoius={true}
-				onClick={() => move('right')}
-			/>
+			<DesktopButton onClick={() => move('right')} />
 			<div className="relative flex w-full">
 				<div className="absolute left-0 z-10 h-full w-[50%] bg-gradient-to-r from-grey-1000/60"></div>
 				<div className="w-full grid -translate-x-[200%] auto-cols-[100%] grid-flow-col lg:-translate-x-[33.3333%] lg:auto-cols-[33.3333%]">
@@ -52,7 +49,10 @@ function Carousel({ active }: { active: ToggleLabels }) {
 				</div>
 				<div className="absolute -right-0 z-10 h-full w-[50%] bg-gradient-to-l from-grey-1000/60"></div>
 			</div>
-			<DesktopButton onClick={() => move('left')} />
+			<DesktopButton
+				isNext={true}
+				onClick={() => move('left')}
+			/>
 			<MobileButtons
 				onClickLeft={() => move('right')}
 				onClickRight={() => move('left')}
