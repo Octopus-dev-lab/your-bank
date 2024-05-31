@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../shared/Logo';
+import Logo from '../../assets/svg/logo.svg?react';
 import { pages } from './footer.data';
 
 function Navigation() {

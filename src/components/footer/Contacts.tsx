@@ -9,11 +9,7 @@ function Contacts() {
 					key={index}
 					href={contact.url}
 				>
-					<img
-						className="w-5 2xl:w-6"
-						src={contact.icon}
-						alt={contact.alt}
-					/>
+					<contact.icon className="w-5 h-5 2xl:w-6 2xl:h-6" />
 					<p className="text-white-500 text-[0.875rem] leading-[1.3125rem] font-normal whitespace-nowrap lg:text-[1rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">
 						{contact.text}
 					</p>

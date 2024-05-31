@@ -5,17 +5,14 @@ function InfoExtra() {
 		<div className="relative w-full flex flex-col justify-center items-center lg:flex-row">
 			<div className="absolute -top-5 z-10 flex gap-2 lg:hidden">
 				{social.map((social, index) => {
+					console.log(social.logo);
 					return (
 						<a
 							key={index}
-							className="p-3 bg-green-800 rounded-full"
+							className="p-3 bg-green-800 rounded-full lg:w-[2.38] lg:h-[2.38]"
 							href={social.url}
 						>
-							<img
-								className="w-5"
-								src={social.logo}
-								alt={social.alt}
-							/>
+							{<social.logo className="w-5 h-5" />}
 						</a>
 					);
 				})}
@@ -29,11 +26,7 @@ function InfoExtra() {
 								className="p-3 2xl:p-[0.88rem] bg-green-800 rounded-full"
 								href={social.url}
 							>
-								<img
-									className="w-6"
-									src={social.logo}
-									alt={social.alt}
-								/>
+								<social.logo className="w-6 h-6" />
 							</a>
 						);
 					})}
@@ -57,7 +50,7 @@ function InfoExtra() {
 					</a>
 				</div>
 
-				<div className="flex flex-col">
+				<div className="flex flex-col gap-3">
 					<a
 						className="text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light text-center whitespace-nowrap 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]"
 						href="https://produce-ui.com/"
