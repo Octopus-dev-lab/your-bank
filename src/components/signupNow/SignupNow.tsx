@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import RadialAbstract from '../shared/RadialAbstract';
+import RadialAbstract from '../../assets/svg/radial-abstract.svg?react';
 
 function SignupNow() {
 	return (
