@@ -12,7 +12,7 @@ function PreviewExchangeTable() {
 					<img
 						className="w-[1.28556rem] h-[1.28556rem] lg:w-[1.72638rem] lg:h-[1.72638rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem] rounded-full"
 						src={indianFlag}
-						alt="india-flag"
+						alt="indian flag"
 					/>
 					<p className="text-white-100 text-[0.57694rem] leading-[0.86538rem] font-normal lg:text-[0.77475rem] lg:leading-[1.16213rem] 2xl:text-[0.97544rem] 2xl:leading-[1.46313rem]">
 						INR
@@ -27,7 +27,7 @@ function PreviewExchangeTable() {
 					<img
 						className="w-[1.28556rem] h-[1.28556rem] lg:w-[1.72638rem] lg:h-[1.72638rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem] rounded-full"
 						src={usaFlag}
-						alt="usa-flag"
+						alt="USA flag"
 					/>
 					<p className="text-white-100 text-[0.57694rem] leading-[0.86538rem] font-normal lg:text-[0.77475rem] lg:leading-[1.16213rem] 2xl:text-[0.97544rem] 2xl:leading-[1.46313rem]">
 						USD
