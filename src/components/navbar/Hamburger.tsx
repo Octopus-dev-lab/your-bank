@@ -16,9 +16,9 @@ function Hamburger({
 			className={`inline-block px-3 py-1 rounded-full ${isOpen ? '' : 'bg-green-800'} md:hidden`}
 		>
 			{isOpen ? (
-				<CloseIcon className="w-5 h-5" />
+				<CloseIcon className="w-7 h-7" />
 			) : (
-				<HamburgerIcon className="w-5 h-5" />
+				<HamburgerIcon className="w-7 h-7" />
 			)}
 		</button>
 	);
