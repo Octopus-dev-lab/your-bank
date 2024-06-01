@@ -1,5 +1,5 @@
-import indianFlag from '../../assets/home.preview/indian-flag.svg';
-import usaFlag from '../../assets/home.preview/usa-flag.svg';
+import indianFlag from '../../assets/images/indian-flag.webp';
+import usaFlag from '../../assets/images/usa-flag.webp';
 
 function PreviewExchangeTable() {
 	return (
@@ -10,7 +10,7 @@ function PreviewExchangeTable() {
 			<div className="table-content hidden-on-start p-[0.64rem] border-r border-r-grey-800 border-b border-b-grey-800 lg:p-[0.86rem] 2xl:p-[1.08rem]">
 				<div className="flex items-center gap-[0.32rem] mb-[0.32rem] lg:gap-[0.43rem] lg:mb-[0.43rem] 2xl:gap-[0.54rem] 2xl:mb-[0.54rem]">
 					<img
-						className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
+						className="w-[1.28556rem] h-[1.28556rem] lg:w-[1.72638rem] lg:h-[1.72638rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem] rounded-full"
 						src={indianFlag}
 						alt="india-flag"
 					/>
@@ -25,7 +25,7 @@ function PreviewExchangeTable() {
 			<div className="table-content hidden-on-start p-[0.64rem] border-b border-b-grey-800 lg:p-[0.86rem] 2xl:p-[1.08rem]">
 				<div className="flex items-center gap-[0.32rem] mb-[0.32rem] lg:gap-[0.43rem] lg:mb-[0.43rem] 2xl:gap-[0.54rem] 2xl:mb-[0.54rem]">
 					<img
-						className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
+						className="w-[1.28556rem] h-[1.28556rem] lg:w-[1.72638rem] lg:h-[1.72638rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem] rounded-full"
 						src={usaFlag}
 						alt="usa-flag"
 					/>

@@ -1,4 +1,4 @@
-import plusIcon from '../../assets/home.preview/plus.svg';
+import Plus from '../../assets/svg/plus.svg?react';
 
 function PreviewFloatingChip() {
 	// timeline.from(
@@ -21,11 +21,7 @@ function PreviewFloatingChip() {
 			className="hidden-on-start absolute -top-[1.61rem] -left-[0.61rem] z-10 py-[0.6rem] px-[0.64rem] flex gap-[0.32rem] items-center justify-center rounded-lg bg-[#22251B] lg:-top-10 lg:-left-12 lg:py-[0.69rem] lg:px-[0.86rem] lg:gap-[0.43rem] 2xl:gap-[0.54rem] 2xl:py-[0.88rem] 2xl:px-[1.08rem]"
 		>
 			<div className="rounded-full bg-green-800 p-[0.32rem] lg:p-[0.42rem]  2xl:p-[0.54rem] ">
-				<img
-					className="w-3 lg:w-4 2xl:w-[1.3rem]"
-					src={plusIcon}
-					alt="plus icon"
-				/>
+				<Plus className="w-3 lg:w-4 2xl:w-[1.3rem]" />
 			</div>
 			<div>
 				<p className="text-white-100 text-[0.641rem] leading-[0.9615rem] font-normal lg:text-[0.86081rem] lg:leading-[1.29125rem] 2xl:text-[1rem] 2xl:leading-[1.62569rem]">

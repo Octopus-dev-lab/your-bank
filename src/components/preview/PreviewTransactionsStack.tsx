@@ -1,4 +1,4 @@
-import transactionIcon from '../../assets/home.preview/transaction.svg';
+import Transaction from '../../assets/svg/transaction.svg?react';
 
 const transactionData = [
 	{
@@ -39,10 +39,7 @@ function PreviewTransactionsStack() {
 					>
 						<div className="flex gap-[0.32rem] items-center lg:gap-[0.43rem] 2xl:gap-[0.54rem]">
 							<div className="w-fit rounded-full p-[0.32rem] bg-green-800 lg:p-[0.43rem] 2xl:p-[0.54rem]">
-								<img
-									className="w-[0.77131rem] lg:w-4 2xl:w-[1.3rem]"
-									src={transactionIcon}
-								/>
+								<Transaction className="w-[0.77131rem] h-[0.76713rem] lg:w-[0.82869rem] lg:h-[0.82413rem] 2xl:w-[1.3rem] 2xl:h-[1.3rem]" />
 							</div>
 							<div>
 								<p className="text-white-100 text-[0.57694rem] leading-[0.86538rem] font-light lg:text-[0.77475rem] lg:leading-[1.16213rem] 2xl:text-[0.97544rem] 2xl:leading-[1.46313rem]">

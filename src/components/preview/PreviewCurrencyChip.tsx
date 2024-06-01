@@ -1,7 +1,7 @@
-import bitcoinIcon from '../../assets/home.preview/bitcoin.svg';
-import dollarIcon from '../../assets/home.preview/dollar.svg';
-import ethereumIcon from '../../assets/home.preview/ethereum.svg';
-import euroIcon from '../../assets/home.preview/euro.svg';
+import Bitcoin from '../../assets/svg/bitcoin-oval.svg?react';
+import Dollar from '../../assets/svg/dollar-oval.svg?react';
+import Ethereum from '../../assets/svg/ethereum-oval.svg?react';
+import Euro from '../../assets/svg/euro-oval.svg?react';
 
 function PreviewCurrencyChip() {
 	return (
@@ -13,26 +13,10 @@ function PreviewCurrencyChip() {
 				Supported Currency
 			</h6>
 			<div className="flex rounded-full p-[0.32rem] gap-1 border border-grey-800 bg-grey-1000 lg:p-[0.43rem] lg:gap-[0.34rem] 2xl:p-[0.53rem] 2xl:gap-[0.43rem]">
-				<img
-					className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
-					src={dollarIcon}
-					alt="dollar icon"
-				/>
-				<img
-					className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
-					src={euroIcon}
-					alt="euro icon"
-				/>
-				<img
-					className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
-					src={bitcoinIcon}
-					alt="bitcoin icon"
-				/>
-				<img
-					className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]"
-					src={ethereumIcon}
-					alt="ethereum icon"
-				/>
+				<Dollar className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
+				<Euro className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
+				<Bitcoin className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
+				<Ethereum className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
 			</div>
 		</div>
 	);
