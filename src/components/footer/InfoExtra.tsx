@@ -5,7 +5,6 @@ function InfoExtra() {
 		<div className="relative w-full flex flex-col justify-center items-center lg:flex-row">
 			<div className="absolute -top-5 z-10 flex gap-2 lg:hidden">
 				{social.map((social, index) => {
-					console.log(social.logo);
 					return (
 						<a
 							key={index}
