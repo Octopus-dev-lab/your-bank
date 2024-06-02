@@ -35,11 +35,7 @@ function BenefitsSection() {
 								<div className="absolute top-0 left-0 w-full h-full -z-10 opacity-80 rounded-t-[2.5rem] rounded-b-[0.875rem] bg-plywood" />
 								<div className="h-full w-full p-6 bg-gradient-to-l from-[#1A1A1A] from-40% to-green-800/[0.02] rounded-t-[2.5rem] rounded-b-[0.875rem] lg:p-10 2xl:p-[3.12rem]">
 									<div className="flex items-center gap-[0.62rem] mb-5 lg:mb-6 lg:gap-[0.88rem] 2xl:gap-5">
-										<img
-											className="w-[4.25rem] 2xl:w-[5.38rem]"
-											src={benefit.icon}
-											alt={benefit.alt}
-										/>
+										<benefit.icon className="w-[4.25rem] h-[4.25rem] 2xl:w-[5.38rem] 2xl:h-[5.38rem]" />
 										<h3 className="text-white-100 text-[1.125rem] leading-[1.6875rem] font-normal lg:text-[1.25rem] lg:leading-[1.875rem] 2xl:text-[1.5rem] 2xl:leading-[2.25rem]">
 											{benefit.title}
 										</h3>
