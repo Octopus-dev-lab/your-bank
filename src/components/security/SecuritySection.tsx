@@ -3,7 +3,7 @@ import secureSmartphoneMd from '../../assets/images/secure-smartphone-md.webp';
 import secureSmartphoneSm from '../../assets/images/secure-smartphone-sm.webp';
 import DualPaneCard from '../shared/DualPaneCard';
 
-function Introduction() {
+function SecuritySection() {
 	return (
 		<div className="w-full p-4 lg:px-20 2xl:px-40">
 			<DualPaneCard
@@ -26,4 +26,4 @@ function Introduction() {
 	);
 }
 
-export default Introduction;
+export default SecuritySection;
