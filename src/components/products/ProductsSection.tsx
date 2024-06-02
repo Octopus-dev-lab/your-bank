@@ -8,7 +8,7 @@ export enum ToggleLabels {
 	BUSINESS = 'For Businesses'
 }
 
-function Products() {
+function ProductsSection() {
 	const [active, setActive] = useState(ToggleLabels.INDIVIDUALS);
 
 	return (
@@ -36,4 +36,4 @@ function Products() {
 	);
 }
 
-export default Products;
+export default ProductsSection;

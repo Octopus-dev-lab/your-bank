@@ -2,7 +2,7 @@ import { useState } from 'react';
 import DownArrow from '../../assets/svg/down-arrow.svg?react';
 import faqsData from './faqs.data';
 
-function Faqs() {
+function FaqsSection() {
 	const [contentQty, setContentQty] = useState(4);
 	const faqs = faqsData.slice(0, contentQty);
 	const allShown = contentQty >= faqsData.length;
@@ -56,4 +56,4 @@ function Faqs() {
 	);
 }
 
-export default Faqs;
+export default FaqsSection;

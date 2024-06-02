@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import RadialAbstract from '../../assets/svg/radial-abstract.svg?react';
 
-function SignupNow() {
+function SignupNowSection() {
 	return (
 		<div className="p-4 mt-20 lg:mt-20 lg:px-20 2xl:px-40 2xl:mt-40">
 			<div className="relative rounded-2xl overflow-clip">
@@ -37,4 +37,4 @@ function SignupNow() {
 	);
 }
 
-export default SignupNow;
+export default SignupNowSection;

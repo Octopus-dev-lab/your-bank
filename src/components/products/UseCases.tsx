@@ -1,6 +1,6 @@
 import Card from './Card';
 import Description from './Description';
-import { ToggleLabels } from './Products';
+import { ToggleLabels } from './ProductsSection';
 import useCasesData from './useCases.data';
 
 function UseCases({

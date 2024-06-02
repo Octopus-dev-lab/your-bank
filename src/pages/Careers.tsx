@@ -1,9 +1,9 @@
 import Benefits from '../components/careers.benefits/Benefits';
 import Introduction from '../components/careers.introduction/Introduction';
 import Values from '../components/careers.values/Values';
-import Faqs from '../components/faqs/Faqs';
+import Faqs from '../components/faqs/FaqsSection';
 import JobOpenings from '../components/jobOpenings/JobOpenings';
-import SignupNow from '../components/signupNow/SignupNow';
+import SignupNow from '../components/signupNow/SignupNowSection';
 
 function Careers() {
 	return (

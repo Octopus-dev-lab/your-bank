@@ -1,4 +1,4 @@
-import Faqs from '../components/faqs/Faqs';
+import Faqs from '../components/faqs/FaqsSection';
 import Introduction from '../components/security.introduction/introduction';
 import Protection from '../components/security.protection/Protection';
 
