@@ -1,5 +1,6 @@
 import React from 'react';
-import divider from '../../assets/careers.benefits/divider.svg';
+import CrossDivider from '../shared/CrossDivider';
+import DashedDivider from '../shared/DashedDivider';
 import benefitsData from './benefits.data';
 
 function BenefitsSection() {
@@ -15,19 +16,7 @@ function BenefitsSection() {
 				growth.
 			</p>
 			<div className="lg:relative lg:grid lg:grid-cols-2 lg:auto-rows-fr lg:gap-[3.76rem] lg:overflow-clip 2xl:gap-[6.24rem]">
-				<div
-					className={
-						'hidden lg:block absolute top-1/2 -translate-y-1/2 w-full h-[3.76rem] bg-repeat-x bg-left opacity-50'
-					}
-					style={{ backgroundImage: `url('${divider}')` }}
-				/>
-
-				<div
-					className={
-						'hidden lg:block absolute top-1/2 w-full h-[3.76rem] bg-repeat-x bg-left rotate-90 opacity-50'
-					}
-					style={{ backgroundImage: `url('${divider}')` }}
-				/>
+				<CrossDivider />
 				{benefitsData.map((benefit, index) => (
 					<React.Fragment key={index}>
 						<div className="relative mx-auto p-px -z-30 rounded-t-[2.5rem] rounded-b-[0.875rem] bg-gradient-to-tr from-grey-800 to-[#3A441F] from-[80%]">
@@ -47,10 +36,7 @@ function BenefitsSection() {
 							</div>
 						</div>
 						{index !== benefitsData.length - 1 && (
-							<img
-								className="my-6 lg:hidden"
-								src={divider}
-							/>
+							<DashedDivider className="my-6 lg:hidden w-full h-px" />
 						)}
 					</React.Fragment>
 				))}
