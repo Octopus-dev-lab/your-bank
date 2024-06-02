@@ -1,6 +1,6 @@
 import pressReleasesData from './pressReleases.data';
 
-function PressReleases() {
+function PressReleasesSection() {
 	return (
 		<div className="mt-20 px-4 lg:mt-[7.5rem] lg:px-20 2xl:mt-40 2xl:px-40">
 			<h2 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-[2.625rem] font-normal text-center lg:text-[2.375rem] lg:leading-[3.5625rem] lg:text-start 2xl:mb-[0.88rem] 2xl:text-[3rem] 2xl:leading-[4.5rem]">
@@ -16,11 +16,21 @@ function PressReleases() {
 						key={index}
 						className="p-5 border border-grey-800 rounded-t-[2.5rem] rounded-b-2xl bg-grey-900 lg:p-6 2xl:p-[1.88rem]"
 					>
-						<img
-							src={release.img}
-							alt="press release"
-							className="mb-[1.88rem] rounded-t-[1.875rem] rounded-b-[0.75rem] w-full lg:mb-10 2xl:mb-[3.19rem]"
-						/>
+						<picture>
+							<source
+								media="(min-width: 1180px)"
+								src={release.img.lg}
+							/>
+							<source
+								media="(min-width: 430px)"
+								src={release.img.md}
+							/>
+							<img
+								src={release.img.sm}
+								alt="press release"
+								className="mb-[1.88rem] rounded-t-[1.875rem] rounded-b-[0.75rem] w-full lg:mb-10 2xl:mb-[3.19rem]"
+							/>
+						</picture>
 						<div className="lg:px-6 2xl:px-[1.88rem]">
 							<h3 className="mb-[0.62rem] text-white-100 text-[1.125rem] leading-[1.6875rem] font-normal lg:text-[1.25rem] lg:leading-[1.875rem] lg:mb-[0.88rem] 2xl:text-[1.5rem] 2xl:leading-[2.25rem]">
 								{release.title}
@@ -44,4 +54,4 @@ function PressReleases() {
 	);
 }
 
-export default PressReleases;
+export default PressReleasesSection;

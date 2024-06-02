@@ -1,6 +1,5 @@
-import bgTexture from '../../assets/about.missionVision/bg-texture.webp';
-import dottedAbstractDesign from '../../assets/about.missionVision/dotted-abstract.svg';
-import missionVisionData from './missionVision.data';
+import DotPattern from '../../assets/svg/dot-pattern.svg?react';
+import missionVisionData from './mission.data';
 
 function MissionVision() {
 	return (
@@ -21,23 +20,26 @@ function MissionVision() {
 						key={index}
 						className={`lg:flex lg:items-center ${index == 1 ? 'lg:flex-row-reverse lg:-mt-[5.25rem] 2xl:-mt-[6.25rem]' : ''}`}
 					>
-						<div className="relative mb-[1.88rem] border border-grey-800 border-b-green-800 rounded-t-[3.125rem] overflow-clip lg:w-[42.5%] lg:border-b-grey-800 2xl:w-[41.6%]">
-							<img
-								className="absolute top-0 left-0 z-30 w-full bg-green-800/[0.03]"
-								src={dottedAbstractDesign}
-							/>
-
-							<img
-								className="absolute w-full h-full top-0 left-0 z-10"
-								src={bgTexture}
-							/>
-							<div className="absolute w-full h-full top-0 left-0 z-20 bg-gradient-to-l from-grey-1000 to-grey-1000/0 from-[50%] to-[80%]"></div>
+						<div className="relative mb-[1.88rem] border border-grey-800 border-b-green-800 rounded-t-[3.125rem] lg:rounded-b-[1.25rem] overflow-clip lg:mb-0 lg:w-[42.5%] lg:border-b-grey-800 2xl:w-[41.6%]">
+							<div className="absolute w-full h-full top-0 left-0 z-10 bg-plywood" />
+							<DotPattern className="absolute top-[2.5%] left-[2.5%] z-20 w-[95%] h-[95%]" />
+							<div className="absolute w-full h-full top-0 left-0 z-30 bg-radient-circle-c from-white-100/0 to-grey-900/70 to-80%"></div>
 							<div className="w-full pt-5 px-5 lg:pt-8 lg:px-8 min-[1440px]:px-[3.75rem] min-[1440px]:pt-[3.75rem]">
-								<img
-									className="relative top-full left-o z-40 w-full rounded-t-[3.125rem]"
-									src={item.img}
-									alt={item.alt}
-								/>
+								<picture>
+									<source
+										media="(min-width: 1180px)"
+										src={item.img.lg}
+									/>
+									<source
+										media="(min-width: 430px)"
+										src={item.img.md}
+									/>
+									<img
+										className="relative top-full left-0 z-40 w-full rounded-t-[3.125rem]"
+										src={item.img.sm}
+										alt={item.alt}
+									/>
+								</picture>
 							</div>
 						</div>
 						<div
