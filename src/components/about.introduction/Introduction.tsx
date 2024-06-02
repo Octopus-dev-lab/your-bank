@@ -1,10 +1,16 @@
-import image from '../../assets/about.introduction/image.webp';
+import employeesLg from '../../assets/images/employees-lg.webp';
+import employeesMd from '../../assets/images/employees-md.webp';
+import employeesSm from '../../assets/images/employees-sm.webp';
 import DualPaneCard from '../shared/DualPaneCard';
 
 function Introduction() {
 	return (
 		<div className="w-full p-4 lg:px-20 2xl:px-40">
-			<DualPaneCard image={image}>
+			<DualPaneCard
+				imageSm={employeesSm}
+				imageMd={employeesMd}
+				imageLg={employeesLg}
+			>
 				<h2 className="mb-[0.12rem] text-white-100 text-[0.875rem] leading-[1.3125rem] font-normal text-center lg:text-[1.125rem] lg:leading-[1.6875rem] min-[1180px]:text-start 2xl:text-[1.25rem] 2xl:leading-[1.875rem]">
 					Welcome to YourBank
 				</h2>
