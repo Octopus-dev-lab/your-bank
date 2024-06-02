@@ -1,7 +1,7 @@
 import image from '../../assets/careers.introduction/image.webp';
 import DualPaneCard from '../shared/DualPaneCard';
 
-function Introduction() {
+function YBCareersSection() {
 	return (
 		<div className="w-full px-4 lg:px-20 2xl:px-40">
 			<DualPaneCard image={image}>
@@ -23,4 +23,4 @@ function Introduction() {
 	);
 }
 
-export default Introduction;
+export default YBCareersSection;

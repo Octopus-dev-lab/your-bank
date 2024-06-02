@@ -1,6 +1,6 @@
 import valuesData from './values.data';
 
-function Values() {
+function ValuesSection() {
 	return (
 		<div className="mt-20 px-4 lg:mt-[7.5rem] lg:px-20 2xl:mt-40 2xl:px-40">
 			<h2 className="mb-[0.62rem] text-white-100 text-[1.75rem] leading-[2.625rem] font-medium text-center after:content-['_Values'] after:text-green-800 lg:text-[2.375rem] lg:leading-[3.5625rem] lg:text-start 2xl:mb-[0.88rem] 2xl:text-[3rem] 2xl:leading-[4.5rem]">
@@ -35,4 +35,4 @@ function Values() {
 	);
 }
 
-export default Values;
+export default ValuesSection;
