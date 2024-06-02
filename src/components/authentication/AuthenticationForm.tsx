@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom';
-import appleIcon from '../../assets/authentication/apple.svg';
-import facebookIcon from '../../assets/authentication/facebook.svg';
-import googleIcon from '../../assets/authentication/google.svg';
-import dottedAbstractDesign from '../../assets/shared/dotted-abstract.svg';
+import Apple from '../../assets/svg/halo-apple.svg?react';
+import Facebook from '../../assets/svg/halo-facebook.svg?react';
+import Google from '../../assets/svg/halo-google.svg?react';
+import RadialAbstract from '../../assets/svg/radial-abstract.svg?react';
 
 function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 	return (
 		<div className="px-4 lg:px-40 2xl:px-72">
 			<div className="relative p-[1.88rem] border border-grey-800 rounded-2xl bg-paper lg:flex lg:justify-center lg:items-center 2xl:max-w-[1326px] 2xl:mx-auto">
-				<img
-					className="absolute top-0 right-0 -scale-x-100 w-[10.4375rem] lg:w-[16rem] 2xl:w-[21.375rem]"
-					src={dottedAbstractDesign}
-				/>
+				<RadialAbstract className="absolute -top-1 -right-1 w-[10.4375rem] h-[9.9375rem] lg:w-[16rem] lg:h-[15.1875rem] 2xl:w-[21.375rem] 2xl:h-[20.3125rem] rotate-90" />
 				<div className="max-w-[398px] mx-auto lg:max-w-none lg:w-[62.4%] lg:flex lg:flex-col">
 					<h1 className="mb-[0.62rem] text-green-800 text-[1.75rem] leading-normal font-medium text-center lg:mb-4 lg:text-[2.375rem] 2xl:mb-5 2xl:text-[3rem]">
 						{isSignup ? 'Sign Up' : 'Login'}
@@ -91,21 +88,9 @@ function AuthenticationForm({ isSignup }: { isSignup: boolean }) {
 						<div className="w-full h-px bg-grey-200"></div>
 					</div>
 					<div className="flex gap-5 justify-center items-center">
-						<img
-							className="w-[4.25rem] 2xl:w-[5.875rem]"
-							src={googleIcon}
-							alt="login with google"
-						/>
-						<img
-							className="w-[4.25rem] 2xl:w-[5.875rem]"
-							src={facebookIcon}
-							alt="login with facebook"
-						/>
-						<img
-							className="w-[4.25rem] 2xl:w-[5.875rem]"
-							src={appleIcon}
-							alt="login with apple"
-						/>
+						<Google className="w-[3.75rem] h-[3.75rem] 2xl:w-[5.13rem] 2xl:h-[5.13rem]" />
+						<Facebook className="w-[3.75rem] h-[3.75rem] 2xl:w-[5.13rem] 2xl:h-[5.13rem]" />
+						<Apple className="w-[3.75rem] h-[3.75rem] 2xl:w-[5.13rem] 2xl:h-[5.13rem]" />
 					</div>
 				</div>
 			</div>
