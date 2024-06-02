@@ -1,11 +1,11 @@
-import BankIcon from '../../assets/svg/bank.svg?react';
-import BookIcon from '../../assets/svg/book.svg?react';
-import CashIcon from '../../assets/svg/cash.svg?react';
-import DollarIcon from '../../assets/svg/dollar.svg?react';
-import HandMoneyIcon from '../../assets/svg/hand-money.svg?react';
-import MoneyBagIcon from '../../assets/svg/money-bag.svg?react';
-import PresentationIcon from '../../assets/svg/presentation.svg?react';
-import SkyscraperIcon from '../../assets/svg/skyscraper.svg?react';
+import BankIcon from '../../assets/svg/halo-bank.svg?react';
+import BookIcon from '../../assets/svg/halo-book.svg?react';
+import CashIcon from '../../assets/svg/halo-cash.svg?react';
+import DollarIcon from '../../assets/svg/halo-dollar.svg?react';
+import HandMoneyIcon from '../../assets/svg/halo-hand-money.svg?react';
+import MoneyBagIcon from '../../assets/svg/halo-money-bag.svg?react';
+import PresentationIcon from '../../assets/svg/halo-presentation.svg?react';
+import SkyscraperIcon from '../../assets/svg/halo-skyscraper.svg?react';
 
 export default {
 	individuals: {
@@ -15,22 +15,18 @@ export default {
 		cardsData: [
 			{
 				icon: MoneyBagIcon,
-				// alt: 'Hand holding a bag with a dollar sign',
 				title: 'Managing Personal Finances'
 			},
 			{
 				icon: HandMoneyIcon,
-				// alt: 'Hands joined to form a house with a dollar sign inside',
 				title: 'Saving for the Future'
 			},
 			{
 				icon: BankIcon,
-				// alt: 'Bank building',
 				title: 'Home ownership'
 			},
 			{
 				icon: BookIcon,
-				// alt: 'Open book',
 				title: 'Education Funding'
 			}
 		],
@@ -56,22 +52,18 @@ export default {
 		cardsData: [
 			{
 				icon: SkyscraperIcon,
-				// alt: 'Skyscrapers',
 				title: 'Startups and Entrepreneurs'
 			},
 			{
 				icon: CashIcon,
-				// alt: 'Cash',
 				title: 'Cash Flow Management'
 			},
 			{
 				icon: PresentationIcon,
-				// alt: 'Plip chart easel',
 				title: 'Business Expansion'
 			},
 			{
 				icon: DollarIcon,
-				// alt: 'Dollar sign',
 				title: 'Payment Solutions'
 			}
 		],

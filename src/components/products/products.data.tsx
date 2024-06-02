@@ -1,6 +1,6 @@
-import BoxIcon from '../../assets/svg/box.svg?react';
-import BriefcaseIcon from '../../assets/svg/briefcase.svg?react';
-import CashIcon from '../../assets/svg/cash.svg?react';
+import BoxIcon from '../../assets/svg/halo-box.svg?react';
+import BriefcaseIcon from '../../assets/svg/halo-briefcase.svg?react';
+import CashIcon from '../../assets/svg/halo-cash.svg?react';
 
 export default [
 	{
