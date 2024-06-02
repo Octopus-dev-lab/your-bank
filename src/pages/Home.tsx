@@ -1,12 +1,12 @@
 import { ReactSVG } from 'react-svg';
 import abstract from '../assets/svg/dot-abstract.svg';
-import Faqs from '../components/faqs/Faqs';
+import FaqsSection from '../components/faqs/FaqsSection';
 import FeaturesSection from '../components/features/FeaturesSection';
-import Preview from '../components/preview/Preview';
-import Products from '../components/products/Products';
-import SignupNow from '../components/signupNow/SignupNow';
+import PreviewSection from '../components/preview/PreviewSection';
+import ProductsSection from '../components/products/ProductsSection';
+import SignupNowSection from '../components/signupNow/SignupNowSection';
 import TestimonialsSection from '../components/testimonials/TestimonialsSection';
-import Welcome from '../components/welcome/Welcome';
+import WelcomeSection from '../components/welcome/WelcomeSection';
 
 function Home() {
 	return (
@@ -33,14 +33,14 @@ function Home() {
 				)}
 			/>
 			<div className="lg:w-full lg:min-h-[85vh] lg:flex lg:justify-between lg:items-center lg:px-20 2xl:px-40">
-				<Welcome />
-				<Preview />
+				<WelcomeSection />
+				<PreviewSection />
 			</div>
-			<Products />
+			<ProductsSection />
 			<FeaturesSection />
-			<Faqs />
+			<FaqsSection />
 			<TestimonialsSection />
-			<SignupNow />
+			<SignupNowSection />
 		</div>
 	);
 }
