@@ -1,6 +1,8 @@
 import React from 'react';
-import DividerHorizontal from '../../assets/svg/dashed-divider-horizontal.svg?react';
-import DividerVertical from '../../assets/svg/dashed-divider-vertical.svg?react';
+import { useMediaQuery } from 'react-responsive';
+import DashedDivider from '../shared/DashedDivider';
+// import DividerHorizontal from '../../assets/svg/dashed-divider-horizontal.svg?react';
+// import DividerVertical from '../../assets/svg/dashed-divider-vertical.svg?react';
 
 function Description({
 	data
@@ -18,6 +20,8 @@ function Description({
 		}[];
 	};
 }) {
+	const goVertical = useMediaQuery({ minWidth: '768px' });
+
 	return (
 		<div className="flex flex-col items-center justify-center lg:items-start lg:w-[45%]">
 			<h3 className="mb-[0.62rem] text-white-100 text-[1.25rem] leading-[1.875rem] font-medium text-center lg:text-[1.625rem] lg:leading-[2.4375rem] lg:text-start 2xl:text-[1.875rem] 2xl:leading-[2.8125rem] 2xl:mb-[0.88rem]">
@@ -39,8 +43,12 @@ function Description({
 						</div>
 						{index !== data.stats.length - 1 && (
 							<>
-								<DividerHorizontal className="md:hidden" />
-								<DividerVertical className="hidden md:block" />
+								<DashedDivider
+									orientation={
+										goVertical ? 'vertical' : 'horizontal'
+									}
+									className="w-full h-px md:w-px md:h-full"
+								/>
 							</>
 						)}
 					</React.Fragment>
