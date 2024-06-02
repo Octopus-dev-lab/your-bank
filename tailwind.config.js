@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from 'tailwindcss/plugin';
+import radialGradientPlugin from './radial-gradient.plugin';
 
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -75,6 +76,7 @@ export default {
 	},
 	plugins: [
 		require('tailwind-scrollbar'),
+		radialGradientPlugin,
 		plugin(function ({ matchUtilities, theme }) {
 			matchUtilities(
 				{
