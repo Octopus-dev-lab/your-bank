@@ -1,4 +1,4 @@
-import briefcaseIcon from '../../assets/careers.jobOpenings/briefcase.svg';
+import BriefcaseIcon from '../../assets/svg/grey-briefcase.svg?react';
 
 type CardProps = {
 	title: string;
@@ -41,11 +41,9 @@ function Card({ title, location, department, about, requirements }: CardProps) {
 								className="flex gap-2 2xl:gap-[0.62rem]"
 								key={index}
 							>
-								<img
-									className="w-[1.16069rem] 2xl:w-[1.39288rem]"
-									src={briefcaseIcon}
-									alt="briefcase icon"
-								/>
+								<div>
+									<BriefcaseIcon className="w-5 h-5 2xl:w-6 2xl:h-6" />
+								</div>
 								<p className="text-grey-200 text-[0.875rem] leading-[1.3125rem] font-light lg:text-[1rem] lg:leading-6 2xl:text-[1.125rem] 2xl:leading-[1.6875rem]">
 									{requirement}
 								</p>
