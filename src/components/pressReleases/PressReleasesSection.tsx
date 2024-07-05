@@ -19,16 +19,16 @@ function PressReleasesSection() {
 						<picture>
 							<source
 								media="(min-width: 1180px)"
-								src={release.img.lg}
+								srcSet={release.img.lg}
 							/>
 							<source
 								media="(min-width: 430px)"
-								src={release.img.md}
+								srcSet={release.img.md}
 							/>
 							<img
 								src={release.img.sm}
 								alt="press release"
-								className="mb-[1.88rem] rounded-t-[1.875rem] rounded-b-[0.75rem] w-full lg:mb-10 2xl:mb-[3.19rem]"
+								className="mb-[1.88rem] rounded-t-[1.875rem] rounded-b-[0.75rem] w-full aspect-[1.54] lg:aspect-[2.1] min-[1180px]:aspect-[2.17] lg:mb-10 2xl:mb-[3.19rem] object-cover"
 							/>
 						</picture>
 						<div className="lg:px-6 2xl:px-[1.88rem]">
