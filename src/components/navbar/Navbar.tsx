@@ -17,6 +17,7 @@ function Navbar() {
 			gsap.from(navbarRef.current, {
 				y: -40,
 				autoAlpha: 0,
+				delay: 0.5,
 				duration: 0.5
 			});
 			const tl = gsap.timeline({ paused: true });
