@@ -16,7 +16,7 @@ function Toggle<T>({
 			{Object.keys(labels).map((key) => (
 				<button
 					key={key}
-					className={`px-[1.12rem] py-[0.62rem] text-[0.875rem] leading-[1.3124rem] font-normal whitespace-nowrap rounded-full 2xl:px-6 2xl:py-[0.88rem] 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] ${
+					className={`px-[1.12rem] py-[0.62rem] text-[0.875rem] leading-[1.3124rem] font-normal whitespace-nowrap rounded-full 2xl:px-6 2xl:py-[0.88rem] 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] transition-color duration-200 ${
 						active === labels[key]
 							? 'bg-green-800 text-grey-900'
 							: 'text-white-100'
