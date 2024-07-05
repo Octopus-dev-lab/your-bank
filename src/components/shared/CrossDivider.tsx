@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-function CrossDivider() {
+function CrossDivider({ className }: { className?: string }) {
 	const svgRef = useRef(null);
 	const [dimensions, setDimensions] = useState({ width: 100, height: 100 });
 
@@ -27,7 +27,7 @@ function CrossDivider() {
 	return (
 		<div
 			ref={svgRef}
-			className="absolute top-0 left-0 z-0 w-full h-full"
+			className={className}
 		>
 			<svg
 				width={dimensions.width}

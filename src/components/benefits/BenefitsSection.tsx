@@ -16,7 +16,7 @@ function BenefitsSection() {
 				growth.
 			</p>
 			<div className="lg:relative lg:grid lg:grid-cols-2 lg:auto-rows-fr lg:gap-[3.76rem] lg:overflow-clip 2xl:gap-[6.24rem]">
-				<CrossDivider />
+				<CrossDivider className="hidden lg:block absolute top-0 left-0 z-0 w-full h-full" />
 				{benefitsData.map((benefit, index) => (
 					<React.Fragment key={index}>
 						<div className="relative mx-auto p-px -z-30 rounded-t-[2.5rem] rounded-b-[0.875rem] bg-gradient-to-tr from-grey-800 to-[#3A441F] from-[80%]">
