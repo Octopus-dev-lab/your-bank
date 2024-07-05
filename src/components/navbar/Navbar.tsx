@@ -14,10 +14,9 @@ function Navbar() {
 
 	const { contextSafe } = useGSAP(
 		() => {
-			gsap.set(navbarRef.current, { y: -40, autoAlpha: 0 });
-			gsap.to(navbarRef.current, {
-				y: 0,
-				autoAlpha: 1,
+			gsap.from(navbarRef.current, {
+				y: -40,
+				autoAlpha: 0,
 				duration: 0.5
 			});
 			const tl = gsap.timeline({ paused: true });
