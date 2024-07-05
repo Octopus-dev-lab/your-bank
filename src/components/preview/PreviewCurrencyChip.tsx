@@ -13,10 +13,10 @@ function PreviewCurrencyChip() {
 				Supported Currency
 			</h6>
 			<div className="flex rounded-full p-[0.32rem] gap-1 border border-grey-800 bg-grey-1000 lg:p-[0.43rem] lg:gap-[0.34rem] 2xl:p-[0.53rem] 2xl:gap-[0.43rem]">
-				<Dollar className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
-				<Euro className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
-				<Bitcoin className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
-				<Ethereum className="w-[1.28556rem] lg:w-[1.72638rem] 2xl:w-[2.16756rem]" />
+				<Dollar className="w-[1.28556rem] h-[1.2785rem] lg:w-[1.72638rem] lg:h-[1.71694rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem]" />
+				<Euro className="w-[1.28556rem] h-[1.2785rem] lg:w-[1.72638rem] lg:h-[1.71694rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem]" />
+				<Bitcoin className="w-[1.28556rem] h-[1.2785rem] lg:w-[1.72638rem] lg:h-[1.71694rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem]" />
+				<Ethereum className="w-[1.28556rem] h-[1.2785rem] lg:w-[1.72638rem] lg:h-[1.71694rem] 2xl:w-[2.16756rem] 2xl:h-[2.16756rem]" />
 			</div>
 		</div>
 	);
