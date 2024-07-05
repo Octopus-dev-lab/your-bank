@@ -17,7 +17,7 @@ function AuthLinks() {
 					<Link
 						to={authenticationPages.login}
 						className={
-							"' bg-green-800 text-grey-900 px-6 py-3 2xl:px-[1.88rem] 2xl:py-[0.88rem] hover:bg-green-800/95 inline-block rounded-full"
+							"' bg-green-800 text-grey-900 px-6 py-3 2xl:px-[1.88rem] 2xl:py-[0.88rem] transition-colors duration-200 hover:bg-green-800/90 inline-block rounded-full"
 						}
 					>
 						Login
