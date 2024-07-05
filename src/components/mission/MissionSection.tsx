@@ -35,7 +35,7 @@ function MissionVision() {
 										src={item.img.md}
 									/>
 									<img
-										className="relative top-full left-0 z-40 w-full rounded-t-[3.125rem]"
+										className="relative top-full left-0 z-40 w-full aspect-[1.03] rounded-t-[3.125rem] object-cover"
 										src={item.img.sm}
 										alt={item.alt}
 									/>
