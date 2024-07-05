@@ -28,11 +28,11 @@ function MissionVision() {
 								<picture>
 									<source
 										media="(min-width: 1180px)"
-										src={item.img.lg}
+										srcSet={item.img.lg}
 									/>
 									<source
 										media="(min-width: 430px)"
-										src={item.img.md}
+										srcSet={item.img.md}
 									/>
 									<img
 										className="relative top-full left-0 z-40 w-full aspect-[1.03] rounded-t-[3.125rem] object-cover"
