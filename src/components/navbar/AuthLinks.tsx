@@ -8,9 +8,7 @@ function AuthLinks() {
 				<li>
 					<Link
 						to={authenticationPages.signup}
-						className={
-							'inline-block rounded-full hover:scale-[1.03]'
-						}
+						className={'inline-block rounded-full'}
 					>
 						Sign Up
 					</Link>
@@ -19,7 +17,7 @@ function AuthLinks() {
 					<Link
 						to={authenticationPages.login}
 						className={
-							"' bg-green-800 text-grey-900 px-6 py-3 2xl:px-[1.88rem] 2xl:py-[0.88rem] hover:bg-green-800/95 inline-block rounded-full hover:scale-[1.03]"
+							"' bg-green-800 text-grey-900 px-6 py-3 2xl:px-[1.88rem] 2xl:py-[0.88rem] hover:bg-green-800/95 inline-block rounded-full"
 						}
 					>
 						Login

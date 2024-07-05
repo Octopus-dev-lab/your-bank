@@ -10,7 +10,7 @@ function PagesLinks() {
 					<li key={index}>
 						<Link
 							to={page.link}
-							className={`inline-block text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] ${location === page.link ? 'text-green-800 hover:cursor-default' : 'hover:scale-[1.03] text-white-100'}`}
+							className={`inline-block text-[0.875rem] leading-[1.3125rem] font-normal 2xl:text-[1.125rem] 2xl:leading-[1.6875rem] ${location === page.link ? 'text-green-800 hover:cursor-default' : 'text-white-100'}`}
 						>
 							{page.name}
 						</Link>
