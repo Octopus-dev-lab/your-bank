@@ -87,7 +87,14 @@ function AnimatePreview({
 			mainTimeline.add(tableTimeline, 'start-contents');
 			mainTimeline.to(
 				'#currency-chip',
-				{ opacity: 1, duration: 1 },
+				{
+					keyframes: {
+						zIndex: [-50, -50, 0],
+						opacity: [0, 1, 1],
+						y: ['-60%', '60%', '0%']
+					},
+					duration: 1
+				},
 				'<0.2'
 			);
 			mainTimeline.from(
@@ -101,7 +108,7 @@ function AnimatePreview({
 					},
 					duration: 1
 				},
-				'<0.4'
+				'<0.2'
 			);
 		},
 		{ scope }
