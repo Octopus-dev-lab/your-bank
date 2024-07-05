@@ -5,7 +5,7 @@ import DualPaneCard from '../shared/DualPaneCard';
 
 function Introduction() {
 	return (
-		<div className="w-full p-4 lg:px-20 2xl:px-40">
+		<div className="w-full min-[1180px]:flex min-[1180px]:items-center min-[1180px]:-translate-y-5 min-[1180px]:h-[85vh] px-4 lg:px-20 2xl:px-40">
 			<DualPaneCard
 				imageSm={employeesSm}
 				imageMd={employeesMd}
