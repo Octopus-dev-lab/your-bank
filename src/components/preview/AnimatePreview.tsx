@@ -19,6 +19,8 @@ function AnimatePreview({
 				});
 			}
 
+			gsap.set(containerRef.current, { opacity: 0 });
+
 			const stackTimeline = gsap.timeline();
 			stackTimeline.to('#transaction-0-card', {
 				y: 0,
@@ -49,8 +51,12 @@ function AnimatePreview({
 			tableTimeline.to('#exchange-button', { opacity: 1, y: 0 }, '<0.2');
 
 			const mainTimeline = gsap.timeline({
-				duration: 1
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: '20% bottom'
+				}
 			});
+			mainTimeline.set(containerRef.current, { opacity: 1 });
 			mainTimeline.set('.hidden-on-start', { opacity: 0 }, 0);
 			mainTimeline.set('.titles', { y: -20 }, 0);
 			mainTimeline.set('#preview-box', { opacity: 0, height: 0 }, 0);
